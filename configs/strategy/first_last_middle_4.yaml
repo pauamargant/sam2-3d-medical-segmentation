@@ -1,0 +1,6 @@
+# @package _global_
+strategy:
+  name: baseline
+  num_prompts: 6  # Maps to num_slices in get_prompt_slices (must be even)
+  margin: 5 # Margin for prompt slice selection
+

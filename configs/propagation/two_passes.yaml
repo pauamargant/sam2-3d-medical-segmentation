@@ -1,0 +1,4 @@
+# @package _global_
+propagation:
+  name: two_passes
+  # direction: forward  # For future bidirectional support

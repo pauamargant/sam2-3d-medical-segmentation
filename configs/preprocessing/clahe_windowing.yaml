@@ -1,0 +1,9 @@
+# @package _global_
+preprocessing:
+  name: default
+  scan_params:
+    apply_clahe_flag: true
+    apply_windowing_flag: true
+  gt_params: {}
+
+

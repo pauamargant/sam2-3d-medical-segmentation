@@ -1,0 +1,1226 @@
+{
+  "dataset_name": "dataset_50_ex_0",
+  "dataset_config_path": "configs/dataset/dataset_50_ex_0.yaml",
+  "runner_config": {
+    "output": {
+      "results_filename": "evaluations/memory_bank/sliced_special_2.json"
+    },
+    "inference": {
+      "mode": "single",
+      "strategy": "first_last_middle",
+      "propagation": "forward",
+      "preprocessing": "no_clahe_windowing"
+    },
+    "model": {
+      "checkpoint": "./src/base_sam2/sam2/checkpoints/sam2.1_hiera_small.pt",
+      "config": "configs/sam2.1/sam2.1_hiera_s.yaml",
+      "use_maskmem_tpos_enc": true,
+      "maskmem_tpos_ckpt": "./src/base_sam2/sam2/checkpoints/memory/sliced_special_to_2.pt",
+      "custom_overrides": {
+        "model": {
+          "num_maskmem": 4
+        }
+      }
+    },
+    "data": {
+      "tmp_dir": "./tmp",
+      "cleanup_tmp_dirs": true,
+      "rebuild_each_case": true
+    },
+    "processing": {
+      "relevant_slices_margin": 0.0
+    },
+    "visualization": {
+      "save_examples": false
+    },
+    "strategy": {
+      "name": "first_last_middle",
+      "margin": 5
+    },
+    "propagation": {
+      "name": "forward",
+      "direction": "forward"
+    },
+    "preprocessing": {
+      "name": "default",
+      "scan_params": {
+        "apply_clahe_flag": false,
+        "apply_windowing_flag": true
+      },
+      "gt_params": {}
+    }
+  },
+  "strategy_config": {
+    "name": "first_last_middle",
+    "margin": 5
+  },
+  "propagation_config": {
+    "name": "forward",
+    "direction": "forward"
+  },
+  "preprocessing_config": {
+    "name": "default",
+    "scan_params": {
+      "apply_clahe_flag": false,
+      "apply_windowing_flag": true
+    },
+    "gt_params": {}
+  },
+  "individual_results": [
+    {
+      "mean_dice": 0.7720279097557068,
+      "mean_iou": 0.6932764053344727,
+      "mean_hausdorff": 4.910099983215332,
+      "prompt_indices": [
+        5
+      ],
+      "num_frames": 11,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 1.3586112658958882,
+      "propagation_seconds_per_slice": 0.12351011508144438,
+      "predictor_init_seconds": 2.535650931065902,
+      "case_name": "ct.nii",
+      "bone_name": "vertebrae",
+      "case_index": 6
+    },
+    {
+      "mean_dice": 0.6029572486877441,
+      "mean_iou": 0.5320898294448853,
+      "mean_hausdorff": 10.655799865722656,
+      "prompt_indices": [
+        5,
+        8,
+        11
+      ],
+      "num_frames": 17,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 0.812380864052102,
+      "propagation_seconds_per_slice": 0.047787109650123644,
+      "predictor_init_seconds": 0.41944552888162434,
+      "case_name": "ct.nii",
+      "bone_name": "vertebrae",
+      "case_index": 8
+    },
+    {
+      "mean_dice": 0.786772608757019,
+      "mean_iou": 0.6692134141921997,
+      "mean_hausdorff": 6.692362308502197,
+      "prompt_indices": [
+        4,
+        5
+      ],
+      "num_frames": 10,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 0.440515497000888,
+      "propagation_seconds_per_slice": 0.0440515497000888,
+      "predictor_init_seconds": 0.3678034311160445,
+      "case_name": "ct.nii",
+      "bone_name": "vertebrae",
+      "case_index": 5
+    },
+    {
+      "mean_dice": 0.7566636204719543,
+      "mean_iou": 0.687166690826416,
+      "mean_hausdorff": 7.621589183807373,
+      "prompt_indices": [
+        5,
+        12,
+        18
+      ],
+      "num_frames": 24,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 1.1326917079277337,
+      "propagation_seconds_per_slice": 0.047195487830322236,
+      "predictor_init_seconds": 0.34392966888844967,
+      "case_name": "ct.nii",
+      "bone_name": "rib",
+      "case_index": 1
+    },
+    {
+      "mean_dice": 0.8421759009361267,
+      "mean_iou": 0.7775647044181824,
+      "mean_hausdorff": 0.9662299752235413,
+      "prompt_indices": [
+        5,
+        7,
+        8
+      ],
+      "num_frames": 14,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 0.6783078871667385,
+      "propagation_seconds_per_slice": 0.04845056336905275,
+      "predictor_init_seconds": 0.3400493902154267,
+      "case_name": "ct.nii",
+      "bone_name": "rib",
+      "case_index": 0
+    },
+    {
+      "mean_dice": 0.4709802269935608,
+      "mean_iou": 0.43026724457740784,
+      "mean_hausdorff": 14.287588119506836,
+      "prompt_indices": [
+        5,
+        25,
+        37
+      ],
+      "num_frames": 43,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 2.0081903128884733,
+      "propagation_seconds_per_slice": 0.04670210029973194,
+      "predictor_init_seconds": 0.3416662171948701,
+      "case_name": "ct.nii",
+      "bone_name": "rib",
+      "case_index": 2
+    },
+    {
+      "mean_dice": 0.5017685890197754,
+      "mean_iou": 0.4562259912490845,
+      "mean_hausdorff": 11.146373748779297,
+      "prompt_indices": [
+        5,
+        8,
+        10
+      ],
+      "num_frames": 16,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 0.7663065451197326,
+      "propagation_seconds_per_slice": 0.04789415906998329,
+      "predictor_init_seconds": 0.3423248340841383,
+      "case_name": "ct.nii",
+      "bone_name": "vertebrae",
+      "case_index": 7
+    },
+    {
+      "mean_dice": 0.8432460427284241,
+      "mean_iou": 0.7619507312774658,
+      "mean_hausdorff": 2.1739742755889893,
+      "prompt_indices": [
+        5,
+        24,
+        42
+      ],
+      "num_frames": 48,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 2.3205751448404044,
+      "propagation_seconds_per_slice": 0.048345315517508425,
+      "predictor_init_seconds": 0.36096659186296165,
+      "case_name": "ct.nii",
+      "bone_name": "rib",
+      "case_index": 3
+    },
+    {
+      "mean_dice": 0.8205393552780151,
+      "mean_iou": 0.732641339302063,
+      "mean_hausdorff": 1.2288364171981812,
+      "prompt_indices": [
+        5,
+        29,
+        47
+      ],
+      "num_frames": 53,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 2.5541473620105535,
+      "propagation_seconds_per_slice": 0.04819145966057648,
+      "predictor_init_seconds": 0.371503938222304,
+      "case_name": "ct.nii",
+      "bone_name": "rib",
+      "case_index": 4
+    },
+    {
+      "mean_dice": 0.6999742984771729,
+      "mean_iou": 0.6339460611343384,
+      "mean_hausdorff": 10.322152137756348,
+      "prompt_indices": [
+        5,
+        12,
+        18
+      ],
+      "num_frames": 24,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 1.1575771558564156,
+      "propagation_seconds_per_slice": 0.04823238149401732,
+      "predictor_init_seconds": 0.3690795220900327,
+      "case_name": "ct.nii",
+      "bone_name": "vertebrae",
+      "case_index": 9
+    },
+    {
+      "mean_dice": 0.8967558145523071,
+      "mean_iou": 0.8612722158432007,
+      "mean_hausdorff": 1.875691294670105,
+      "prompt_indices": [
+        5,
+        23,
+        41
+      ],
+      "num_frames": 47,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 2.1933058560825884,
+      "propagation_seconds_per_slice": 0.04666608204431039,
+      "predictor_init_seconds": 0.3374591460451484,
+      "case_name": "ct.nii",
+      "bone_name": "clavicula",
+      "case_index": 16
+    },
+    {
+      "mean_dice": 0.8243979215621948,
+      "mean_iou": 0.7916945815086365,
+      "mean_hausdorff": 4.783631801605225,
+      "prompt_indices": [
+        5,
+        18,
+        30
+      ],
+      "num_frames": 36,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 1.8440544409677386,
+      "propagation_seconds_per_slice": 0.051223734471326075,
+      "predictor_init_seconds": 0.3618703361134976,
+      "case_name": "ct.nii",
+      "bone_name": "clavicula",
+      "case_index": 15
+    },
+    {
+      "mean_dice": 0.864876925945282,
+      "mean_iou": 0.8434322476387024,
+      "mean_hausdorff": 1.0045634508132935,
+      "prompt_indices": [
+        5,
+        27,
+        49
+      ],
+      "num_frames": 55,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 2.658695977181196,
+      "propagation_seconds_per_slice": 0.04833992685783993,
+      "predictor_init_seconds": 0.39819065714254975,
+      "case_name": "ct.nii",
+      "bone_name": "humerus",
+      "case_index": 14
+    },
+    {
+      "mean_dice": 0.8824926018714905,
+      "mean_iou": 0.825222909450531,
+      "mean_hausdorff": 1.966373085975647,
+      "prompt_indices": [
+        5,
+        12,
+        19
+      ],
+      "num_frames": 25,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 1.1742456229403615,
+      "propagation_seconds_per_slice": 0.04696982491761446,
+      "predictor_init_seconds": 0.4031360140070319,
+      "case_name": "ct.nii",
+      "bone_name": "sternum",
+      "case_index": 30
+    },
+    {
+      "mean_dice": 0.8929503560066223,
+      "mean_iou": 0.8630285859107971,
+      "mean_hausdorff": 1.5120621919631958,
+      "prompt_indices": [
+        5,
+        15,
+        24
+      ],
+      "num_frames": 30,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 1.4798842649906874,
+      "propagation_seconds_per_slice": 0.04932947549968958,
+      "predictor_init_seconds": 0.41718844417482615,
+      "case_name": "ct.nii",
+      "bone_name": "humerus",
+      "case_index": 12
+    },
+    {
+      "mean_dice": 0.7296572923660278,
+      "mean_iou": 0.6241612434387207,
+      "mean_hausdorff": 8.382085800170898,
+      "prompt_indices": [
+        5,
+        46,
+        86
+      ],
+      "num_frames": 92,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 4.595711728092283,
+      "propagation_seconds_per_slice": 0.04995338834882916,
+      "predictor_init_seconds": 0.47076354012824595,
+      "case_name": "ct.nii",
+      "bone_name": "sacrum",
+      "case_index": 21
+    },
+    {
+      "mean_dice": 0.8842727541923523,
+      "mean_iou": 0.8394167423248291,
+      "mean_hausdorff": 4.962317943572998,
+      "prompt_indices": [
+        5,
+        24,
+        42
+      ],
+      "num_frames": 48,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 2.3904767010826617,
+      "propagation_seconds_per_slice": 0.04980159793922212,
+      "predictor_init_seconds": 0.3424303699284792,
+      "case_name": "ct.nii",
+      "bone_name": "clavicula",
+      "case_index": 19
+    },
+    {
+      "mean_dice": 0.8836199045181274,
+      "mean_iou": 0.8463181853294373,
+      "mean_hausdorff": 2.960111141204834,
+      "prompt_indices": [
+        5,
+        14,
+        23
+      ],
+      "num_frames": 29,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 1.3780354200862348,
+      "propagation_seconds_per_slice": 0.047518462761594306,
+      "predictor_init_seconds": 0.35356826800853014,
+      "case_name": "ct.nii",
+      "bone_name": "clavicula",
+      "case_index": 18
+    },
+    {
+      "mean_dice": 0.9552852511405945,
+      "mean_iou": 0.9214375019073486,
+      "mean_hausdorff": 1.131318211555481,
+      "prompt_indices": [
+        5,
+        59,
+        113
+      ],
+      "num_frames": 119,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 5.788347902940586,
+      "propagation_seconds_per_slice": 0.048641579016307446,
+      "predictor_init_seconds": 0.34472141810692847,
+      "case_name": "ct.nii",
+      "bone_name": "humerus",
+      "case_index": 13
+    },
+    {
+      "mean_dice": 0.9380186796188354,
+      "mean_iou": 0.8933745622634888,
+      "mean_hausdorff": 3.2034997940063477,
+      "prompt_indices": [
+        5,
+        71,
+        136
+      ],
+      "num_frames": 142,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 6.771724923979491,
+      "propagation_seconds_per_slice": 0.04768820368999641,
+      "predictor_init_seconds": 0.34834542707540095,
+      "case_name": "ct.nii",
+      "bone_name": "hip",
+      "case_index": 27
+    },
+    {
+      "mean_dice": 0.839004635810852,
+      "mean_iou": 0.8224692344665527,
+      "mean_hausdorff": 0.5,
+      "prompt_indices": [
+        1,
+        3,
+        5
+      ],
+      "num_frames": 7,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 0.424477610969916,
+      "propagation_seconds_per_slice": 0.060639658709988,
+      "predictor_init_seconds": 0.3417552860919386,
+      "case_name": "ct.nii",
+      "bone_name": "humerus",
+      "case_index": 10
+    },
+    {
+      "mean_dice": 0.8350474238395691,
+      "mean_iou": 0.821084201335907,
+      "mean_hausdorff": 0.8478949069976807,
+      "prompt_indices": [
+        5,
+        10,
+        14
+      ],
+      "num_frames": 20,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 0.9772870091255754,
+      "propagation_seconds_per_slice": 0.04886435045627877,
+      "predictor_init_seconds": 0.33969155396334827,
+      "case_name": "ct.nii",
+      "bone_name": "humerus",
+      "case_index": 11
+    },
+    {
+      "mean_dice": 0.8598803281784058,
+      "mean_iou": 0.7788589596748352,
+      "mean_hausdorff": 2.2642314434051514,
+      "prompt_indices": [
+        5,
+        29,
+        52
+      ],
+      "num_frames": 58,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 2.6964710459578782,
+      "propagation_seconds_per_slice": 0.04649088010272204,
+      "predictor_init_seconds": 0.36824943916872144,
+      "case_name": "ct.nii",
+      "bone_name": "scapula",
+      "case_index": 35
+    },
+    {
+      "mean_dice": 0.8978740572929382,
+      "mean_iou": 0.835020899772644,
+      "mean_hausdorff": 8.692098617553711,
+      "prompt_indices": [
+        5,
+        73,
+        140
+      ],
+      "num_frames": 146,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 6.97891644295305,
+      "propagation_seconds_per_slice": 0.047800797554472946,
+      "predictor_init_seconds": 0.3625442199409008,
+      "case_name": "ct.nii",
+      "bone_name": "hip",
+      "case_index": 28
+    },
+    {
+      "mean_dice": 0.8343648910522461,
+      "mean_iou": 0.7359498143196106,
+      "mean_hausdorff": 4.997560501098633,
+      "prompt_indices": [
+        5,
+        49,
+        93
+      ],
+      "num_frames": 99,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 5.0170433460734785,
+      "propagation_seconds_per_slice": 0.05067720551589372,
+      "predictor_init_seconds": 0.35143239004537463,
+      "case_name": "ct.nii",
+      "bone_name": "sacrum",
+      "case_index": 20
+    },
+    {
+      "mean_dice": 0.8215197324752808,
+      "mean_iou": 0.7781440019607544,
+      "mean_hausdorff": 4.629776954650879,
+      "prompt_indices": [
+        5,
+        14,
+        22
+      ],
+      "num_frames": 28,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 1.3391558439470828,
+      "propagation_seconds_per_slice": 0.04782699442668153,
+      "predictor_init_seconds": 0.34119119797833264,
+      "case_name": "ct.nii",
+      "bone_name": "clavicula",
+      "case_index": 17
+    },
+    {
+      "mean_dice": 0.47858601808547974,
+      "mean_iou": 0.39494502544403076,
+      "mean_hausdorff": 3.7120041847229004,
+      "prompt_indices": [
+        5,
+        13,
+        18
+      ],
+      "num_frames": 24,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 1.2665212398860604,
+      "propagation_seconds_per_slice": 0.05277171832858585,
+      "predictor_init_seconds": 0.44960486399941146,
+      "case_name": "ct.nii",
+      "bone_name": "sternum",
+      "case_index": 32
+    },
+    {
+      "mean_dice": 0.8546552658081055,
+      "mean_iou": 0.7933229207992554,
+      "mean_hausdorff": 2.0886270999908447,
+      "prompt_indices": [
+        5,
+        22,
+        39
+      ],
+      "num_frames": 45,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 2.0931643401272595,
+      "propagation_seconds_per_slice": 0.0465147631139391,
+      "predictor_init_seconds": 0.3559877318330109,
+      "case_name": "ct.nii",
+      "bone_name": "scapula",
+      "case_index": 36
+    },
+    {
+      "mean_dice": 0.7743507027626038,
+      "mean_iou": 0.6748791337013245,
+      "mean_hausdorff": 4.976627349853516,
+      "prompt_indices": [
+        5,
+        62,
+        118
+      ],
+      "num_frames": 124,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 5.9554489850997925,
+      "propagation_seconds_per_slice": 0.04802781439596607,
+      "predictor_init_seconds": 0.34479836281389,
+      "case_name": "ct.nii",
+      "bone_name": "sternum",
+      "case_index": 34
+    },
+    {
+      "mean_dice": 0.9122337698936462,
+      "mean_iou": 0.8577556014060974,
+      "mean_hausdorff": 7.1464056968688965,
+      "prompt_indices": [
+        5,
+        72,
+        138
+      ],
+      "num_frames": 144,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 6.827942244010046,
+      "propagation_seconds_per_slice": 0.047416265583403096,
+      "predictor_init_seconds": 0.35600327188149095,
+      "case_name": "ct.nii",
+      "bone_name": "hip",
+      "case_index": 26
+    },
+    {
+      "mean_dice": 0.9358900785446167,
+      "mean_iou": 0.8869006633758545,
+      "mean_hausdorff": 4.246066570281982,
+      "prompt_indices": [
+        5,
+        71,
+        136
+      ],
+      "num_frames": 142,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 6.852265937952325,
+      "propagation_seconds_per_slice": 0.048255393929241726,
+      "predictor_init_seconds": 0.3564086761325598,
+      "case_name": "ct.nii",
+      "bone_name": "hip",
+      "case_index": 25
+    },
+    {
+      "mean_dice": 0.8680711388587952,
+      "mean_iou": 0.793209433555603,
+      "mean_hausdorff": 2.659533977508545,
+      "prompt_indices": [
+        5,
+        64,
+        122
+      ],
+      "num_frames": 128,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 6.347385432105511,
+      "propagation_seconds_per_slice": 0.04958894868832431,
+      "predictor_init_seconds": 0.3606483619660139,
+      "case_name": "ct.nii",
+      "bone_name": "sternum",
+      "case_index": 33
+    },
+    {
+      "mean_dice": 0.8953422904014587,
+      "mean_iou": 0.8309565782546997,
+      "mean_hausdorff": 1.3942056894302368,
+      "prompt_indices": [
+        5,
+        53,
+        100
+      ],
+      "num_frames": 106,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 5.2685296181589365,
+      "propagation_seconds_per_slice": 0.04970310960527299,
+      "predictor_init_seconds": 0.43745564203709364,
+      "case_name": "ct.nii",
+      "bone_name": "sternum",
+      "case_index": 31
+    },
+    {
+      "mean_dice": 0.7863776683807373,
+      "mean_iou": 0.6831231117248535,
+      "mean_hausdorff": 5.904395580291748,
+      "prompt_indices": [
+        5,
+        51,
+        97
+      ],
+      "num_frames": 103,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 4.947835291037336,
+      "propagation_seconds_per_slice": 0.04803723583531394,
+      "predictor_init_seconds": 0.3682762919925153,
+      "case_name": "ct.nii",
+      "bone_name": "sacrum",
+      "case_index": 24
+    },
+    {
+      "mean_dice": 0.7318535447120667,
+      "mean_iou": 0.660149335861206,
+      "mean_hausdorff": 16.114925384521484,
+      "prompt_indices": [
+        5,
+        55,
+        105
+      ],
+      "num_frames": 111,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 5.475970624014735,
+      "propagation_seconds_per_slice": 0.04933306868481743,
+      "predictor_init_seconds": 0.3437092259991914,
+      "case_name": "ct.nii",
+      "bone_name": "skull",
+      "case_index": 45
+    },
+    {
+      "mean_dice": 0.7374230623245239,
+      "mean_iou": 0.6445401310920715,
+      "mean_hausdorff": 13.019447326660156,
+      "prompt_indices": [
+        5,
+        35,
+        64
+      ],
+      "num_frames": 70,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 3.4903671271167696,
+      "propagation_seconds_per_slice": 0.04986238753023956,
+      "predictor_init_seconds": 0.3414412799756974,
+      "case_name": "ct.nii",
+      "bone_name": "skull",
+      "case_index": 46
+    },
+    {
+      "mean_dice": 0.7005912065505981,
+      "mean_iou": 0.6030099987983704,
+      "mean_hausdorff": 12.68566608428955,
+      "prompt_indices": [
+        5,
+        46,
+        86
+      ],
+      "num_frames": 92,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 4.500418307958171,
+      "propagation_seconds_per_slice": 0.04891759030389316,
+      "predictor_init_seconds": 0.346234817057848,
+      "case_name": "ct.nii",
+      "bone_name": "sacrum",
+      "case_index": 23
+    },
+    {
+      "mean_dice": 0.9196921586990356,
+      "mean_iou": 0.8531181812286377,
+      "mean_hausdorff": 1.0718059539794922,
+      "prompt_indices": [
+        5,
+        55,
+        105
+      ],
+      "num_frames": 111,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 5.32464650599286,
+      "propagation_seconds_per_slice": 0.04796978834227802,
+      "predictor_init_seconds": 0.34463266795501113,
+      "case_name": "ct.nii",
+      "bone_name": "scapula",
+      "case_index": 37
+    },
+    {
+      "mean_dice": 0.9573875665664673,
+      "mean_iou": 0.9311052560806274,
+      "mean_hausdorff": 3.4022204875946045,
+      "prompt_indices": [
+        5,
+        37,
+        69
+      ],
+      "num_frames": 75,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 3.656175520038232,
+      "propagation_seconds_per_slice": 0.0487490069338431,
+      "predictor_init_seconds": 0.34839847194962204,
+      "case_name": "ct.nii",
+      "bone_name": "femur",
+      "case_index": 42
+    },
+    {
+      "mean_dice": 0.9707931280136108,
+      "mean_iou": 0.9491633176803589,
+      "mean_hausdorff": 1.6741496324539185,
+      "prompt_indices": [
+        5,
+        34,
+        62
+      ],
+      "num_frames": 68,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 3.259363206801936,
+      "propagation_seconds_per_slice": 0.04793181186473435,
+      "predictor_init_seconds": 0.3412605980411172,
+      "case_name": "ct.nii",
+      "bone_name": "femur",
+      "case_index": 43
+    },
+    {
+      "mean_dice": 0.9453188180923462,
+      "mean_iou": 0.913336992263794,
+      "mean_hausdorff": 1.788090467453003,
+      "prompt_indices": [
+        5,
+        28,
+        51
+      ],
+      "num_frames": 57,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 2.740250128088519,
+      "propagation_seconds_per_slice": 0.04807456365067577,
+      "predictor_init_seconds": 0.3420861780177802,
+      "case_name": "ct.nii",
+      "bone_name": "femur",
+      "case_index": 40
+    },
+    {
+      "mean_dice": 0.8820924162864685,
+      "mean_iou": 0.8132522106170654,
+      "mean_hausdorff": 5.72214412689209,
+      "prompt_indices": [
+        5,
+        54,
+        103
+      ],
+      "num_frames": 109,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 5.317363756010309,
+      "propagation_seconds_per_slice": 0.04878315372486522,
+      "predictor_init_seconds": 0.34101357287727296,
+      "case_name": "ct.nii",
+      "bone_name": "scapula",
+      "case_index": 39
+    },
+    {
+      "mean_dice": 0.8319593667984009,
+      "mean_iou": 0.782829225063324,
+      "mean_hausdorff": 1.700264573097229,
+      "prompt_indices": [
+        4,
+        5
+      ],
+      "num_frames": 10,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 0.5053067728877068,
+      "propagation_seconds_per_slice": 0.05053067728877068,
+      "predictor_init_seconds": 0.3416094060521573,
+      "case_name": "ct.nii",
+      "bone_name": "skull",
+      "case_index": 47
+    },
+    {
+      "mean_dice": 0.9372047185897827,
+      "mean_iou": 0.882823646068573,
+      "mean_hausdorff": 1.0650269985198975,
+      "prompt_indices": [
+        5,
+        50,
+        94
+      ],
+      "num_frames": 100,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 5.008888012031093,
+      "propagation_seconds_per_slice": 0.05008888012031093,
+      "predictor_init_seconds": 0.34806776395998895,
+      "case_name": "ct.nii",
+      "bone_name": "scapula",
+      "case_index": 38
+    },
+    {
+      "mean_dice": 0.9585133194923401,
+      "mean_iou": 0.9285542964935303,
+      "mean_hausdorff": 1.8379909992218018,
+      "prompt_indices": [
+        5,
+        29,
+        53
+      ],
+      "num_frames": 59,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 2.80147397890687,
+      "propagation_seconds_per_slice": 0.047482609811980846,
+      "predictor_init_seconds": 0.34334389003925025,
+      "case_name": "ct.nii",
+      "bone_name": "femur",
+      "case_index": 41
+    },
+    {
+      "mean_dice": 0.609186053276062,
+      "mean_iou": 0.5270429253578186,
+      "mean_hausdorff": 14.163805961608887,
+      "prompt_indices": [
+        5,
+        51,
+        97
+      ],
+      "num_frames": 103,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 4.992711352184415,
+      "propagation_seconds_per_slice": 0.04847292574936325,
+      "predictor_init_seconds": 0.3569611550774425,
+      "case_name": "ct.nii",
+      "bone_name": "sacrum",
+      "case_index": 22
+    },
+    {
+      "mean_dice": 0.9253333210945129,
+      "mean_iou": 0.8698247671127319,
+      "mean_hausdorff": 4.435398578643799,
+      "prompt_indices": [
+        5,
+        72,
+        138
+      ],
+      "num_frames": 144,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 7.235015120124444,
+      "propagation_seconds_per_slice": 0.05024316055641975,
+      "predictor_init_seconds": 0.3419173040892929,
+      "case_name": "ct.nii",
+      "bone_name": "hip",
+      "case_index": 29
+    },
+    {
+      "case_name": "ct.nii",
+      "case_index": 49,
+      "error": "Not enough relevant slices (1). Need more than 3 slices to run the case.",
+      "mean_dice": null,
+      "mean_iou": null,
+      "mean_hausdorff": null,
+      "prompt_indices": null,
+      "num_frames": null,
+      "partial_coverage": null,
+      "missing_slices": null,
+      "predictor_init_seconds": null,
+      "propagation_seconds": null,
+      "propagation_seconds_per_slice": null
+    },
+    {
+      "mean_dice": 0.9578211307525635,
+      "mean_iou": 0.9314631223678589,
+      "mean_hausdorff": 2.9994919300079346,
+      "prompt_indices": [
+        5,
+        41,
+        77
+      ],
+      "num_frames": 83,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 4.042622167151421,
+      "propagation_seconds_per_slice": 0.04870629117049905,
+      "predictor_init_seconds": 0.341510629048571,
+      "case_name": "ct.nii",
+      "bone_name": "femur",
+      "case_index": 44
+    },
+    {
+      "mean_dice": 0.827644944190979,
+      "mean_iou": 0.7520873546600342,
+      "mean_hausdorff": 8.822125434875488,
+      "prompt_indices": [
+        5,
+        66,
+        127
+      ],
+      "num_frames": 133,
+      "partial_coverage": false,
+      "missing_slices": [],
+      "propagation_seconds": 6.401961039984599,
+      "propagation_seconds_per_slice": 0.04813504541341804,
+      "predictor_init_seconds": 0.34241457493044436,
+      "case_name": "ct.nii",
+      "bone_name": "skull",
+      "case_index": 48
+    }
+  ],
+  "aggregate_results": {
+    "num_total_cases": 50,
+    "num_successful_cases": 49,
+    "num_failed_cases": 1,
+    "dice_mean": 0.8231723685653842,
+    "dice_std": 0.12165943418836161,
+    "dice_min": 0.4709802269935608,
+    "dice_max": 0.9707931280136108,
+    "iou_mean": 0.7635228883246986,
+    "iou_std": 0.13386923943044737,
+    "iou_min": 0.39494502544403076,
+    "iou_max": 0.9491633176803589,
+    "hausdorff_mean": 5.02752333149618,
+    "hausdorff_std": 4.122871551831985,
+    "hausdorff_min": 0.5,
+    "hausdorff_max": 16.114925384521484
+  },
+  "per_bone_results": {
+    "vertebrae": {
+      "num_total_cases": 5,
+      "num_successful_cases": 5,
+      "num_failed_cases": 0,
+      "dice_mean": 0.6727001309394837,
+      "dice_std": 0.10742818969218422,
+      "dice_min": 0.5017685890197754,
+      "dice_max": 0.786772608757019,
+      "iou_mean": 0.5969503402709961,
+      "iou_std": 0.08930797758052485,
+      "iou_min": 0.4562259912490845,
+      "iou_max": 0.6932764053344727,
+      "hausdorff_mean": 8.745357608795166,
+      "hausdorff_std": 2.482939381687507,
+      "hausdorff_min": 4.910099983215332,
+      "hausdorff_max": 11.146373748779297
+    },
+    "rib": {
+      "num_total_cases": 5,
+      "num_successful_cases": 5,
+      "num_failed_cases": 0,
+      "dice_mean": 0.7467210292816162,
+      "dice_std": 0.14142821582869156,
+      "dice_min": 0.4709802269935608,
+      "dice_max": 0.8432460427284241,
+      "iou_mean": 0.677918142080307,
+      "iou_std": 0.12759470556022798,
+      "iou_min": 0.43026724457740784,
+      "iou_max": 0.7775647044181824,
+      "hausdorff_mean": 5.255643594264984,
+      "hausdorff_std": 5.1241516657079,
+      "hausdorff_min": 0.9662299752235413,
+      "hausdorff_max": 14.287588119506836
+    },
+    "clavicula": {
+      "num_total_cases": 5,
+      "num_successful_cases": 5,
+      "num_failed_cases": 0,
+      "dice_mean": 0.8621132254600525,
+      "dice_std": 0.032323263317839454,
+      "dice_min": 0.8215197324752808,
+      "dice_max": 0.8967558145523071,
+      "iou_mean": 0.8233691453933716,
+      "iou_std": 0.03246357388389434,
+      "iou_min": 0.7781440019607544,
+      "iou_max": 0.8612722158432007,
+      "hausdorff_mean": 3.842305827140808,
+      "hausdorff_std": 1.2170844416914475,
+      "hausdorff_min": 1.875691294670105,
+      "hausdorff_max": 4.962317943572998
+    },
+    "humerus": {
+      "num_total_cases": 5,
+      "num_successful_cases": 5,
+      "num_failed_cases": 0,
+      "dice_mean": 0.877432918548584,
+      "dice_std": 0.0441195933377322,
+      "dice_min": 0.8350474238395691,
+      "dice_max": 0.9552852511405945,
+      "iou_mean": 0.8542903542518616,
+      "iou_std": 0.036927569283353785,
+      "iou_min": 0.821084201335907,
+      "iou_max": 0.9214375019073486,
+      "hausdorff_mean": 0.9991677522659301,
+      "hausdorff_std": 0.3324471333440546,
+      "hausdorff_min": 0.5,
+      "hausdorff_max": 1.5120621919631958
+    },
+    "sternum": {
+      "num_total_cases": 5,
+      "num_successful_cases": 5,
+      "num_failed_cases": 0,
+      "dice_mean": 0.7797685503959656,
+      "dice_std": 0.15649098255271748,
+      "dice_min": 0.47858601808547974,
+      "dice_max": 0.8953422904014587,
+      "iou_mean": 0.7038426160812378,
+      "iou_std": 0.16439839894378022,
+      "iou_min": 0.39494502544403076,
+      "iou_max": 0.8309565782546997,
+      "hausdorff_mean": 2.941748857498169,
+      "hausdorff_std": 1.2774910362865872,
+      "hausdorff_min": 1.3942056894302368,
+      "hausdorff_max": 4.976627349853516
+    },
+    "sacrum": {
+      "num_total_cases": 5,
+      "num_successful_cases": 5,
+      "num_failed_cases": 0,
+      "dice_mean": 0.7320354223251343,
+      "dice_std": 0.07682546655878349,
+      "dice_min": 0.609186053276062,
+      "dice_max": 0.8343648910522461,
+      "iou_mean": 0.6346574187278747,
+      "iou_std": 0.07113603990886617,
+      "iou_min": 0.5270429253578186,
+      "iou_max": 0.7359498143196106,
+      "hausdorff_mean": 9.226702785491943,
+      "hausdorff_std": 3.6325242560322772,
+      "hausdorff_min": 4.997560501098633,
+      "hausdorff_max": 14.163805961608887
+    },
+    "hip": {
+      "num_total_cases": 5,
+      "num_successful_cases": 5,
+      "num_failed_cases": 0,
+      "dice_mean": 0.92186998128891,
+      "dice_std": 0.015086412733941427,
+      "dice_min": 0.8978740572929382,
+      "dice_max": 0.9380186796188354,
+      "iou_mean": 0.8685752987861634,
+      "iou_std": 0.020953983735875533,
+      "iou_min": 0.835020899772644,
+      "iou_max": 0.8933745622634888,
+      "hausdorff_mean": 5.544693851470948,
+      "hausdorff_std": 2.0430269714186866,
+      "hausdorff_min": 3.2034997940063477,
+      "hausdorff_max": 8.692098617553711
+    },
+    "scapula": {
+      "num_total_cases": 5,
+      "num_successful_cases": 5,
+      "num_failed_cases": 0,
+      "dice_mean": 0.8907049775123597,
+      "dice_std": 0.032638625966199486,
+      "dice_min": 0.8546552658081055,
+      "dice_max": 0.9372047185897827,
+      "iou_mean": 0.8242751836776734,
+      "iou_std": 0.03847602596716318,
+      "iou_min": 0.7788589596748352,
+      "iou_max": 0.882823646068573,
+      "hausdorff_mean": 2.442367124557495,
+      "hausdorff_std": 1.7140189763250777,
+      "hausdorff_min": 1.0650269985198975,
+      "hausdorff_max": 5.72214412689209
+    },
+    "skull": {
+      "num_total_cases": 4,
+      "num_successful_cases": 4,
+      "num_failed_cases": 0,
+      "dice_mean": 0.7822202295064926,
+      "dice_std": 0.04764707652999448,
+      "dice_min": 0.7318535447120667,
+      "dice_max": 0.8319593667984009,
+      "iou_mean": 0.7099015116691589,
+      "iou_std": 0.05883342119561076,
+      "iou_min": 0.6445401310920715,
+      "iou_max": 0.782829225063324,
+      "hausdorff_mean": 9.91419067978859,
+      "hausdorff_std": 5.402613217387304,
+      "hausdorff_min": 1.700264573097229,
+      "hausdorff_max": 16.114925384521484
+    },
+    "femur": {
+      "num_total_cases": 5,
+      "num_successful_cases": 5,
+      "num_failed_cases": 0,
+      "dice_mean": 0.9579667925834656,
+      "dice_std": 0.008064013282534692,
+      "dice_min": 0.9453188180923462,
+      "dice_max": 0.9707931280136108,
+      "iou_mean": 0.9307245969772339,
+      "iou_std": 0.011381702369451133,
+      "iou_min": 0.913336992263794,
+      "iou_max": 0.9491633176803589,
+      "hausdorff_mean": 2.3403887033462523,
+      "hausdorff_std": 0.7159909350682695,
+      "hausdorff_min": 1.6741496324539185,
+      "hausdorff_max": 3.4022204875946045
+    },
+    "unknown_bone": {
+      "num_total_cases": 1,
+      "num_successful_cases": 0,
+      "num_failed_cases": 1,
+      "dice_mean": null,
+      "dice_std": null,
+      "dice_min": null,
+      "dice_max": null,
+      "iou_mean": null,
+      "iou_std": null,
+      "iou_min": null,
+      "iou_max": null,
+      "hausdorff_mean": null,
+      "hausdorff_std": null,
+      "hausdorff_min": null,
+      "hausdorff_max": null
+    }
+  },
+  "run_metadata": {
+    "timestamp": "20251217_102804",
+    "inference_mode": "single",
+    "strategy": "first_last_middle",
+    "propagation": "forward",
+    "model_checkpoint": "./src/base_sam2/sam2/checkpoints/sam2.1_hiera_small.pt"
+  }
+}

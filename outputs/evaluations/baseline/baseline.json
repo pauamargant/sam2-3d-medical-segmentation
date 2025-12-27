@@ -1,0 +1,258 @@
+{
+  "dataset_name": "dataset_10_ex_10",
+  "dataset_config_path": "configs/dataset/dataset_10_ex_10.yaml",
+  "runner_config": {
+    "output": {
+      "results_filename": "evaluations/baseline.json"
+    },
+    "inference": {
+      "mode": "single",
+      "strategy": "first_last_middle",
+      "propagation": "forward",
+      "preprocessing": "baseline"
+    },
+    "model": {
+      "checkpoint": "./src/base_sam2/checkpoints/sam2.1_hiera_small.pt",
+      "config": "configs/sam2.1/sam2.1_hiera_s.yaml",
+      "custom_overrides": []
+    },
+    "data": {
+      "tmp_dir": "./tmp",
+      "cleanup_tmp_dirs": true,
+      "rebuild_each_case": true
+    },
+    "processing": {
+      "relevant_slices_margin": 0.0
+    },
+    "visualization": {
+      "save_examples": false
+    },
+    "strategy": {
+      "name": "first_last_middle",
+      "margin": 5
+    },
+    "propagation": {
+      "name": "forward",
+      "direction": "forward"
+    },
+    "preprocessing": {
+      "name": "default",
+      "scan_params": {
+        "apply_clahe_flag": false,
+        "apply_windowing_flag": false
+      },
+      "gt_params": {}
+    }
+  },
+  "strategy_config": {
+    "name": "first_last_middle",
+    "margin": 5
+  },
+  "propagation_config": {
+    "name": "forward",
+    "direction": "forward"
+  },
+  "preprocessing_config": {
+    "name": "default",
+    "scan_params": {
+      "apply_clahe_flag": false,
+      "apply_windowing_flag": false
+    },
+    "gt_params": {}
+  },
+  "individual_results": [
+    {
+      "case_name": "ct.nii",
+      "case_index": 9,
+      "error": "SAM2 checkpoint does not exist: /home/sam2group/Sam2/ML-P2-Sam2/src/base_sam2/checkpoints/sam2.1_hiera_small.pt",
+      "mean_dice": null,
+      "mean_iou": null,
+      "mean_hausdorff": null,
+      "prompt_indices": null,
+      "num_frames": null,
+      "partial_coverage": null,
+      "missing_slices": null,
+      "predictor_init_seconds": null,
+      "propagation_seconds": null,
+      "propagation_seconds_per_slice": null
+    },
+    {
+      "case_name": "ct.nii",
+      "case_index": 1,
+      "error": "SAM2 checkpoint does not exist: /home/sam2group/Sam2/ML-P2-Sam2/src/base_sam2/checkpoints/sam2.1_hiera_small.pt",
+      "mean_dice": null,
+      "mean_iou": null,
+      "mean_hausdorff": null,
+      "prompt_indices": null,
+      "num_frames": null,
+      "partial_coverage": null,
+      "missing_slices": null,
+      "predictor_init_seconds": null,
+      "propagation_seconds": null,
+      "propagation_seconds_per_slice": null
+    },
+    {
+      "case_name": "ct.nii",
+      "case_index": 8,
+      "error": "SAM2 checkpoint does not exist: /home/sam2group/Sam2/ML-P2-Sam2/src/base_sam2/checkpoints/sam2.1_hiera_small.pt",
+      "mean_dice": null,
+      "mean_iou": null,
+      "mean_hausdorff": null,
+      "prompt_indices": null,
+      "num_frames": null,
+      "partial_coverage": null,
+      "missing_slices": null,
+      "predictor_init_seconds": null,
+      "propagation_seconds": null,
+      "propagation_seconds_per_slice": null
+    },
+    {
+      "case_name": "ct.nii",
+      "case_index": 2,
+      "error": "SAM2 checkpoint does not exist: /home/sam2group/Sam2/ML-P2-Sam2/src/base_sam2/checkpoints/sam2.1_hiera_small.pt",
+      "mean_dice": null,
+      "mean_iou": null,
+      "mean_hausdorff": null,
+      "prompt_indices": null,
+      "num_frames": null,
+      "partial_coverage": null,
+      "missing_slices": null,
+      "predictor_init_seconds": null,
+      "propagation_seconds": null,
+      "propagation_seconds_per_slice": null
+    },
+    {
+      "case_name": "ct.nii",
+      "case_index": 3,
+      "error": "SAM2 checkpoint does not exist: /home/sam2group/Sam2/ML-P2-Sam2/src/base_sam2/checkpoints/sam2.1_hiera_small.pt",
+      "mean_dice": null,
+      "mean_iou": null,
+      "mean_hausdorff": null,
+      "prompt_indices": null,
+      "num_frames": null,
+      "partial_coverage": null,
+      "missing_slices": null,
+      "predictor_init_seconds": null,
+      "propagation_seconds": null,
+      "propagation_seconds_per_slice": null
+    },
+    {
+      "case_name": "ct.nii",
+      "case_index": 0,
+      "error": "SAM2 checkpoint does not exist: /home/sam2group/Sam2/ML-P2-Sam2/src/base_sam2/checkpoints/sam2.1_hiera_small.pt",
+      "mean_dice": null,
+      "mean_iou": null,
+      "mean_hausdorff": null,
+      "prompt_indices": null,
+      "num_frames": null,
+      "partial_coverage": null,
+      "missing_slices": null,
+      "predictor_init_seconds": null,
+      "propagation_seconds": null,
+      "propagation_seconds_per_slice": null
+    },
+    {
+      "case_name": "ct.nii",
+      "case_index": 7,
+      "error": "SAM2 checkpoint does not exist: /home/sam2group/Sam2/ML-P2-Sam2/src/base_sam2/checkpoints/sam2.1_hiera_small.pt",
+      "mean_dice": null,
+      "mean_iou": null,
+      "mean_hausdorff": null,
+      "prompt_indices": null,
+      "num_frames": null,
+      "partial_coverage": null,
+      "missing_slices": null,
+      "predictor_init_seconds": null,
+      "propagation_seconds": null,
+      "propagation_seconds_per_slice": null
+    },
+    {
+      "case_name": "ct.nii",
+      "case_index": 6,
+      "error": "SAM2 checkpoint does not exist: /home/sam2group/Sam2/ML-P2-Sam2/src/base_sam2/checkpoints/sam2.1_hiera_small.pt",
+      "mean_dice": null,
+      "mean_iou": null,
+      "mean_hausdorff": null,
+      "prompt_indices": null,
+      "num_frames": null,
+      "partial_coverage": null,
+      "missing_slices": null,
+      "predictor_init_seconds": null,
+      "propagation_seconds": null,
+      "propagation_seconds_per_slice": null
+    },
+    {
+      "case_name": "ct.nii",
+      "case_index": 4,
+      "error": "SAM2 checkpoint does not exist: /home/sam2group/Sam2/ML-P2-Sam2/src/base_sam2/checkpoints/sam2.1_hiera_small.pt",
+      "mean_dice": null,
+      "mean_iou": null,
+      "mean_hausdorff": null,
+      "prompt_indices": null,
+      "num_frames": null,
+      "partial_coverage": null,
+      "missing_slices": null,
+      "predictor_init_seconds": null,
+      "propagation_seconds": null,
+      "propagation_seconds_per_slice": null
+    },
+    {
+      "case_name": "ct.nii",
+      "case_index": 5,
+      "error": "SAM2 checkpoint does not exist: /home/sam2group/Sam2/ML-P2-Sam2/src/base_sam2/checkpoints/sam2.1_hiera_small.pt",
+      "mean_dice": null,
+      "mean_iou": null,
+      "mean_hausdorff": null,
+      "prompt_indices": null,
+      "num_frames": null,
+      "partial_coverage": null,
+      "missing_slices": null,
+      "predictor_init_seconds": null,
+      "propagation_seconds": null,
+      "propagation_seconds_per_slice": null
+    }
+  ],
+  "aggregate_results": {
+    "num_total_cases": 10,
+    "num_successful_cases": 0,
+    "num_failed_cases": 10,
+    "dice_mean": null,
+    "dice_std": null,
+    "dice_min": null,
+    "dice_max": null,
+    "iou_mean": null,
+    "iou_std": null,
+    "iou_min": null,
+    "iou_max": null,
+    "hausdorff_mean": null,
+    "hausdorff_std": null,
+    "hausdorff_min": null,
+    "hausdorff_max": null
+  },
+  "per_bone_results": {
+    "unknown_bone": {
+      "num_total_cases": 10,
+      "num_successful_cases": 0,
+      "num_failed_cases": 10,
+      "dice_mean": null,
+      "dice_std": null,
+      "dice_min": null,
+      "dice_max": null,
+      "iou_mean": null,
+      "iou_std": null,
+      "iou_min": null,
+      "iou_max": null,
+      "hausdorff_mean": null,
+      "hausdorff_std": null,
+      "hausdorff_min": null,
+      "hausdorff_max": null
+    }
+  },
+  "run_metadata": {
+    "timestamp": "20251215_001150",
+    "inference_mode": "single",
+    "strategy": "first_last_middle",
+    "propagation": "forward",
+    "model_checkpoint": "./src/base_sam2/checkpoints/sam2.1_hiera_small.pt"
+  }
+}

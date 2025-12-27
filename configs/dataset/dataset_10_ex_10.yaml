@@ -1,0 +1,44 @@
+name: dataset_10_ex_10
+example_cases: &id001
+- scan_path: data/s1261/ct.nii.gz
+  gt_path: data/s1261/segmentations/rib_right_5.nii.gz
+  bone_name: rib
+- scan_path: data/s1261/ct.nii.gz
+  gt_path: data/s1261/segmentations/vertebrae_T7.nii.gz
+  bone_name: vertebrae
+- scan_path: data/s1261/ct.nii.gz
+  gt_path: data/s1261/segmentations/humerus_right.nii.gz
+  bone_name: humerus
+- scan_path: data/s1261/ct.nii.gz
+  gt_path: data/s1261/segmentations/clavicula_right.nii.gz
+  bone_name: clavicula
+- scan_path: data/s1332/ct.nii.gz
+  gt_path: data/s1332/segmentations/sacrum.nii.gz
+  bone_name: sacrum
+- scan_path: data/s1332/ct.nii.gz
+  gt_path: data/s1332/segmentations/hip_right.nii.gz
+  bone_name: hip
+- scan_path: data/s1261/ct.nii.gz
+  gt_path: data/s1261/segmentations/sternum.nii.gz
+  bone_name: sternum
+- scan_path: data/s1261/ct.nii.gz
+  gt_path: data/s1261/segmentations/scapula_left.nii.gz
+  bone_name: scapula
+- scan_path: data/s0601/ct.nii.gz
+  gt_path: data/s0601/segmentations/femur_left.nii.gz
+  bone_name: femur
+- scan_path: data/s1177/ct.nii.gz
+  gt_path: data/s1177/segmentations/skull.nii.gz
+  bone_name: skull
+cases: *id001
+bone_names:
+- rib
+- vertebrae
+- humerus
+- clavicula
+- sacrum
+- hip
+- sternum
+- scapula
+- femur
+- skull

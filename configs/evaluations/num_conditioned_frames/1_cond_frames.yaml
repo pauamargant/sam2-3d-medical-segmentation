@@ -1,0 +1,36 @@
+
+# Output configuration
+output:
+  results_filename: "evaluations/num_conditioned_frames/1_cond_frames.json"
+# Inference 
+inference:
+  mode: "single"
+  strategy: first_last_middle
+  propagation: forward
+  preprocessing: no_clahe_windowing
+
+# Model configuration
+model:
+  checkpoint: "./src/base_sam2/sam2/checkpoints/sam2.1_hiera_small.pt"
+
+  config: "configs/sam2.1/sam2.1_hiera_s.yaml"
+  custom_overrides: 
+    model: 
+      max_cond_frames_in_attn: 1
+# Data configuration
+data:
+  tmp_dir: "./tmp"
+  cleanup_tmp_dirs: true
+  rebuild_each_case: true
+
+# Processing parameters
+processing:
+  relevant_slices_margin: 0.0  # Margin for detect_relevant_slices
+
+
+
+
+# Visualization settings for example cases during dataset runs
+visualization:
+  save_examples: false       # set to false to skip saving example visualizations
+

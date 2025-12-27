@@ -1,0 +1,532 @@
+2025-12-16 00:09:54,177 - __main__ - INFO - Using propagation type: {'name': 'forward', 'direction': 'forward'}, strategy type: {'name': 'first_last_middle', 'margin': 5}, preprocessing type: {'name': 'default', 'scan_params': {'apply_clahe_flag': False, 'apply_windowing_flag': True}, 'gt_params': {}}
+2025-12-16 00:09:54,178 - __main__ - INFO - Results will be written to: /home/sam2group/Sam2/ML-P2-Sam2/outputs/evaluations/conditional_frame_selection/temp_0.4.json
+2025-12-16 00:09:54,178 - __main__ - INFO - Using relevant_slices_margin: 0.0
+2025-12-16 00:09:54,204 - src.runner - INFO - Using device: cuda
+2025-12-16 00:09:54,224 - src.runner - INFO - Inference mode set to 'single' using BaselineAxisStrategy
+2025-12-16 00:09:54,264 - src.runner - INFO - Running evaluation on dataset 'dataset_50_ex_0' with 50 cases
+2025-12-16 00:09:54,266 - src.runner - INFO - Scheduling 50 cases
+2025-12-16 00:09:54,266 - src.runner - INFO - Starting case 1/50: bone = rib, case_name = ct.nii (49 remaining to start)
+2025-12-16 00:09:54,471 - src.runner - INFO - Starting case 2/50: bone = rib, case_name = ct.nii (48 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 3/50: bone = rib, case_name = ct.nii (47 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 4/50: bone = rib, case_name = ct.nii (46 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 5/50: bone = rib, case_name = ct.nii (45 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 6/50: bone = vertebrae, case_name = ct.nii (44 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 7/50: bone = vertebrae, case_name = ct.nii (43 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 8/50: bone = vertebrae, case_name = ct.nii (42 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 9/50: bone = vertebrae, case_name = ct.nii (41 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 10/50: bone = vertebrae, case_name = ct.nii (40 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 11/50: bone = humerus, case_name = ct.nii (39 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 12/50: bone = humerus, case_name = ct.nii (38 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 13/50: bone = humerus, case_name = ct.nii (37 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 14/50: bone = humerus, case_name = ct.nii (36 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 15/50: bone = humerus, case_name = ct.nii (35 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 16/50: bone = clavicula, case_name = ct.nii (34 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 17/50: bone = clavicula, case_name = ct.nii (33 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 18/50: bone = clavicula, case_name = ct.nii (32 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 19/50: bone = clavicula, case_name = ct.nii (31 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 20/50: bone = clavicula, case_name = ct.nii (30 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 21/50: bone = sacrum, case_name = ct.nii (29 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 22/50: bone = sacrum, case_name = ct.nii (28 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 23/50: bone = sacrum, case_name = ct.nii (27 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 24/50: bone = sacrum, case_name = ct.nii (26 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 25/50: bone = sacrum, case_name = ct.nii (25 remaining to start)
+2025-12-16 00:09:54,472 - src.runner - INFO - Starting case 26/50: bone = hip, case_name = ct.nii (24 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 27/50: bone = hip, case_name = ct.nii (23 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 28/50: bone = hip, case_name = ct.nii (22 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 29/50: bone = hip, case_name = ct.nii (21 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 30/50: bone = hip, case_name = ct.nii (20 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 31/50: bone = sternum, case_name = ct.nii (19 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 32/50: bone = sternum, case_name = ct.nii (18 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 33/50: bone = sternum, case_name = ct.nii (17 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 34/50: bone = sternum, case_name = ct.nii (16 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 35/50: bone = sternum, case_name = ct.nii (15 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 36/50: bone = scapula, case_name = ct.nii (14 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 37/50: bone = scapula, case_name = ct.nii (13 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 38/50: bone = scapula, case_name = ct.nii (12 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 39/50: bone = scapula, case_name = ct.nii (11 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 40/50: bone = scapula, case_name = ct.nii (10 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 41/50: bone = femur, case_name = ct.nii (9 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 42/50: bone = femur, case_name = ct.nii (8 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 43/50: bone = femur, case_name = ct.nii (7 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 44/50: bone = femur, case_name = ct.nii (6 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 45/50: bone = femur, case_name = ct.nii (5 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 46/50: bone = skull, case_name = ct.nii (4 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 47/50: bone = skull, case_name = ct.nii (3 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 48/50: bone = skull, case_name = ct.nii (2 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 49/50: bone = skull, case_name = ct.nii (1 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - Starting case 50/50: bone = skull, case_name = ct.nii (0 remaining to start)
+2025-12-16 00:09:54,473 - src.runner - INFO - All 50 cases scheduled. Waiting for remaining 50 cases to complete...
+2025-12-16 00:09:54,476 - src.utils.dataloader - INFO - Processing case 0: bone = rib
+2025-12-16 00:09:54,476 - src.utils.dataloader - INFO - Processing case 1: bone = rib
+2025-12-16 00:09:54,476 - src.utils.dataloader - INFO - Processing case 7: bone = vertebrae
+2025-12-16 00:09:54,476 - src.utils.dataloader - INFO - Processing case 2: bone = rib
+2025-12-16 00:09:54,476 - src.utils.dataloader - INFO - Processing case 3: bone = rib
+2025-12-16 00:09:54,477 - src.utils.dataloader - INFO - Processing case 4: bone = rib
+2025-12-16 00:09:54,477 - src.utils.dataloader - INFO - Processing case 5: bone = vertebrae
+2025-12-16 00:09:54,477 - src.utils.dataloader - INFO - Processing case 6: bone = vertebrae
+2025-12-16 00:09:54,478 - src.utils.dataloader - INFO - Processing case 8: bone = vertebrae
+2025-12-16 00:09:54,480 - src.utils.dataloader - INFO - Processing case 9: bone = vertebrae
+2025-12-16 00:09:54,480 - src.utils.dataloader - INFO - Processing case 10: bone = humerus
+2025-12-16 00:09:54,481 - src.utils.dataloader - INFO - Processing case 13: bone = humerus
+2025-12-16 00:09:54,481 - src.utils.dataloader - INFO - Processing case 11: bone = humerus
+2025-12-16 00:09:54,482 - src.utils.dataloader - INFO - Processing case 12: bone = humerus
+2025-12-16 00:09:54,483 - src.utils.dataloader - INFO - Processing case 16: bone = clavicula
+2025-12-16 00:09:54,483 - src.utils.dataloader - INFO - Processing case 14: bone = humerus
+2025-12-16 00:09:54,484 - src.utils.dataloader - INFO - Processing case 15: bone = clavicula
+2025-12-16 00:09:54,487 - src.utils.dataloader - INFO - Processing case 17: bone = clavicula
+2025-12-16 00:09:54,492 - src.utils.dataloader - INFO - Processing case 18: bone = clavicula
+2025-12-16 00:09:54,495 - src.utils.dataloader - INFO - Processing case 19: bone = clavicula
+2025-12-16 00:09:54,594 - src.runner - INFO - Running inference for case 7: bone = vertebrae, case_name = ct.nii
+2025-12-16 00:09:54,602 - src.utils.dataloader - INFO - Processing case 20: bone = sacrum
+2025-12-16 00:09:54,650 - src.utils.dataloader - INFO - Processing case 21: bone = sacrum
+2025-12-16 00:09:54,732 - src.utils.dataloader - INFO - Processing case 22: bone = sacrum
+2025-12-16 00:09:54,762 - src.utils.dataloader - INFO - Processing case 23: bone = sacrum
+2025-12-16 00:09:54,788 - src.utils.dataloader - INFO - Processing case 24: bone = sacrum
+2025-12-16 00:09:54,799 - src.utils.dataloader - INFO - Processing case 25: bone = hip
+2025-12-16 00:09:54,809 - src.utils.dataloader - INFO - Processing case 26: bone = hip
+2025-12-16 00:09:54,818 - src.utils.dataloader - INFO - Processing case 27: bone = hip
+2025-12-16 00:09:54,826 - src.utils.dataloader - INFO - Processing case 28: bone = hip
+2025-12-16 00:09:54,839 - src.utils.dataloader - INFO - Processing case 29: bone = hip
+2025-12-16 00:09:54,875 - src.utils.dataloader - INFO - Processing case 30: bone = sternum
+2025-12-16 00:09:54,888 - src.utils.dataloader - INFO - Processing case 31: bone = sternum
+2025-12-16 00:09:54,994 - src.utils.dataloader - INFO - Processing case 32: bone = sternum
+2025-12-16 00:09:55,084 - src.utils.dataloader - INFO - Processing case 33: bone = sternum
+2025-12-16 00:09:55,345 - src.utils.dataloader - INFO - Processing case 34: bone = sternum
+2025-12-16 00:09:55,529 - src.utils.dataloader - INFO - Processing case 35: bone = scapula
+2025-12-16 00:09:55,707 - src.utils.dataloader - INFO - Processing case 36: bone = scapula
+2025-12-16 00:09:55,793 - src.utils.dataloader - INFO - Processing case 37: bone = scapula
+2025-12-16 00:09:55,831 - src.utils.dataloader - INFO - Processing case 38: bone = scapula
+2025-12-16 00:09:55,878 - src.utils.dataloader - INFO - Processing case 39: bone = scapula
+2025-12-16 00:09:55,943 - src.utils.dataloader - INFO - Processing case 40: bone = femur
+2025-12-16 00:09:55,996 - src.utils.dataloader - INFO - Processing case 41: bone = femur
+2025-12-16 00:09:56,027 - src.utils.dataloader - INFO - Processing case 42: bone = femur
+2025-12-16 00:09:56,072 - src.utils.dataloader - INFO - Processing case 43: bone = femur
+2025-12-16 00:09:56,135 - src.utils.dataloader - INFO - Processing case 44: bone = femur
+2025-12-16 00:09:56,151 - src.utils.dataloader - INFO - Processing case 45: bone = skull
+2025-12-16 00:09:56,213 - src.utils.dataloader - INFO - Processing case 46: bone = skull
+2025-12-16 00:09:56,426 - src.utils.dataloader - INFO - Processing case 47: bone = skull
+2025-12-16 00:09:56,511 - src.utils.dataloader - INFO - Processing case 48: bone = skull
+2025-12-16 00:09:56,538 - src.utils.dataloader - INFO - Processing case 49: bone = skull
+2025-12-16 00:09:56,631 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:09:56,804 - src.runner - INFO - SAM2 predictor init: 2.208s
+2025-12-16 00:09:56,805 - src.runner - INFO - [axial] Selected prompt indices: [5, 8, 10]
+2025-12-16 00:09:59,165 - src.runner - INFO - Mean Dice: 0.7748 | Mean IoU: 0.6992 | Mean 95th Percentile Hausdorff Distance: 4.7810
+2025-12-16 00:09:59,182 - src.runner - INFO - Case 7 completed successfully: bone = vertebrae, case_name = ct.nii
+2025-12-16 00:09:59,182 - src.runner - INFO - Progress: 1/50 cases completed, 49 remaining
+2025-12-16 00:09:59,182 - src.runner - INFO - Running inference for case 5: bone = vertebrae, case_name = ct.nii
+2025-12-16 00:09:59,589 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:09:59,632 - src.runner - INFO - SAM2 predictor init: 0.449s
+2025-12-16 00:09:59,633 - src.runner - INFO - [axial] Selected prompt indices: [4, 5]
+2025-12-16 00:10:00,199 - src.runner - INFO - Mean Dice: 0.7552 | Mean IoU: 0.6346 | Mean 95th Percentile Hausdorff Distance: 8.2281
+2025-12-16 00:10:00,215 - src.runner - INFO - Case 5 completed successfully: bone = vertebrae, case_name = ct.nii
+2025-12-16 00:10:00,215 - src.runner - INFO - Progress: 2/50 cases completed, 48 remaining
+2025-12-16 00:10:00,215 - src.runner - INFO - Running inference for case 6: bone = vertebrae, case_name = ct.nii
+2025-12-16 00:10:00,529 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:00,572 - src.runner - INFO - SAM2 predictor init: 0.357s
+2025-12-16 00:10:00,573 - src.runner - INFO - [axial] Selected prompt indices: [5]
+2025-12-16 00:10:01,178 - src.runner - INFO - Mean Dice: 0.7702 | Mean IoU: 0.6912 | Mean 95th Percentile Hausdorff Distance: 5.2562
+2025-12-16 00:10:01,193 - src.runner - INFO - Case 6 completed successfully: bone = vertebrae, case_name = ct.nii
+2025-12-16 00:10:01,193 - src.runner - INFO - Progress: 3/50 cases completed, 47 remaining
+2025-12-16 00:10:01,193 - src.runner - INFO - Running inference for case 16: bone = clavicula, case_name = ct.nii
+2025-12-16 00:10:01,511 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:01,559 - src.runner - INFO - SAM2 predictor init: 0.365s
+2025-12-16 00:10:01,559 - src.runner - INFO - [axial] Selected prompt indices: [5, 23, 41]
+2025-12-16 00:10:04,264 - src.runner - INFO - Mean Dice: 0.9164 | Mean IoU: 0.8795 | Mean 95th Percentile Hausdorff Distance: 1.5700
+2025-12-16 00:10:04,291 - src.runner - INFO - Case 16 completed successfully: bone = clavicula, case_name = ct.nii
+2025-12-16 00:10:04,291 - src.runner - INFO - Progress: 4/50 cases completed, 46 remaining
+2025-12-16 00:10:04,291 - src.runner - INFO - Running inference for case 3: bone = rib, case_name = ct.nii
+2025-12-16 00:10:04,632 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:04,681 - src.runner - INFO - SAM2 predictor init: 0.390s
+2025-12-16 00:10:04,682 - src.runner - INFO - [axial] Selected prompt indices: [5, 24, 42]
+2025-12-16 00:10:07,693 - src.runner - INFO - Mean Dice: 0.8487 | Mean IoU: 0.7682 | Mean 95th Percentile Hausdorff Distance: 2.0949
+2025-12-16 00:10:07,720 - src.runner - INFO - Case 3 completed successfully: bone = rib, case_name = ct.nii
+2025-12-16 00:10:07,720 - src.runner - INFO - Progress: 5/50 cases completed, 45 remaining
+2025-12-16 00:10:07,720 - src.runner - INFO - Running inference for case 15: bone = clavicula, case_name = ct.nii
+2025-12-16 00:10:08,105 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:08,371 - src.runner - INFO - SAM2 predictor init: 0.651s
+2025-12-16 00:10:08,372 - src.runner - INFO - [axial] Selected prompt indices: [5, 18, 30]
+2025-12-16 00:10:10,707 - src.runner - INFO - Mean Dice: 0.8245 | Mean IoU: 0.7919 | Mean 95th Percentile Hausdorff Distance: 3.9092
+2025-12-16 00:10:10,730 - src.runner - INFO - Case 15 completed successfully: bone = clavicula, case_name = ct.nii
+2025-12-16 00:10:10,730 - src.runner - INFO - Progress: 6/50 cases completed, 44 remaining
+2025-12-16 00:10:10,730 - src.runner - INFO - Running inference for case 2: bone = rib, case_name = ct.nii
+2025-12-16 00:10:11,089 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:11,141 - src.runner - INFO - SAM2 predictor init: 0.410s
+2025-12-16 00:10:11,141 - src.runner - INFO - [axial] Selected prompt indices: [5, 25, 37]
+2025-12-16 00:10:14,117 - src.runner - INFO - Mean Dice: 0.4347 | Mean IoU: 0.3989 | Mean 95th Percentile Hausdorff Distance: 15.5501
+2025-12-16 00:10:14,191 - src.runner - INFO - Case 2 completed successfully: bone = rib, case_name = ct.nii
+2025-12-16 00:10:14,191 - src.runner - INFO - Progress: 7/50 cases completed, 43 remaining
+2025-12-16 00:10:14,192 - src.runner - INFO - Running inference for case 0: bone = rib, case_name = ct.nii
+2025-12-16 00:10:14,508 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:14,628 - src.runner - INFO - SAM2 predictor init: 0.435s
+2025-12-16 00:10:14,628 - src.runner - INFO - [axial] Selected prompt indices: [5, 7, 8]
+2025-12-16 00:10:15,505 - src.runner - INFO - Mean Dice: 0.8411 | Mean IoU: 0.7765 | Mean 95th Percentile Hausdorff Distance: 0.9867
+2025-12-16 00:10:15,522 - src.runner - INFO - Case 0 completed successfully: bone = rib, case_name = ct.nii
+2025-12-16 00:10:15,522 - src.runner - INFO - Progress: 8/50 cases completed, 42 remaining
+2025-12-16 00:10:15,522 - src.runner - INFO - Running inference for case 4: bone = rib, case_name = ct.nii
+2025-12-16 00:10:15,831 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:15,874 - src.runner - INFO - SAM2 predictor init: 0.352s
+2025-12-16 00:10:15,875 - src.runner - INFO - [axial] Selected prompt indices: [5, 29, 47]
+2025-12-16 00:10:19,177 - src.runner - INFO - Mean Dice: 0.8264 | Mean IoU: 0.7416 | Mean 95th Percentile Hausdorff Distance: 1.2281
+2025-12-16 00:10:19,205 - src.runner - INFO - Case 4 completed successfully: bone = rib, case_name = ct.nii
+2025-12-16 00:10:19,205 - src.runner - INFO - Progress: 9/50 cases completed, 41 remaining
+2025-12-16 00:10:19,205 - src.runner - INFO - Running inference for case 8: bone = vertebrae, case_name = ct.nii
+2025-12-16 00:10:19,529 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:19,572 - src.runner - INFO - SAM2 predictor init: 0.366s
+2025-12-16 00:10:19,572 - src.runner - INFO - [axial] Selected prompt indices: [5, 8, 11]
+2025-12-16 00:10:20,995 - src.runner - INFO - Mean Dice: 0.8013 | Mean IoU: 0.7224 | Mean 95th Percentile Hausdorff Distance: 5.0817
+2025-12-16 00:10:21,012 - src.runner - INFO - Case 8 completed successfully: bone = vertebrae, case_name = ct.nii
+2025-12-16 00:10:21,012 - src.runner - INFO - Progress: 10/50 cases completed, 40 remaining
+2025-12-16 00:10:21,012 - src.runner - INFO - Running inference for case 1: bone = rib, case_name = ct.nii
+2025-12-16 00:10:21,333 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:21,381 - src.runner - INFO - SAM2 predictor init: 0.368s
+2025-12-16 00:10:21,381 - src.runner - INFO - [axial] Selected prompt indices: [5, 12, 18]
+2025-12-16 00:10:23,109 - src.runner - INFO - Mean Dice: 0.9071 | Mean IoU: 0.8419 | Mean 95th Percentile Hausdorff Distance: 1.5109
+2025-12-16 00:10:23,128 - src.runner - INFO - Case 1 completed successfully: bone = rib, case_name = ct.nii
+2025-12-16 00:10:23,128 - src.runner - INFO - Progress: 11/50 cases completed, 39 remaining
+2025-12-16 00:10:23,128 - src.runner - INFO - Running inference for case 9: bone = vertebrae, case_name = ct.nii
+2025-12-16 00:10:23,451 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:23,495 - src.runner - INFO - SAM2 predictor init: 0.367s
+2025-12-16 00:10:23,496 - src.runner - INFO - [axial] Selected prompt indices: [5, 12, 18]
+2025-12-16 00:10:25,273 - src.runner - INFO - Mean Dice: 0.7556 | Mean IoU: 0.6855 | Mean 95th Percentile Hausdorff Distance: 6.6427
+2025-12-16 00:10:25,294 - src.runner - INFO - Case 9 completed successfully: bone = vertebrae, case_name = ct.nii
+2025-12-16 00:10:25,294 - src.runner - INFO - Progress: 12/50 cases completed, 38 remaining
+2025-12-16 00:10:25,294 - src.runner - INFO - Running inference for case 30: bone = sternum, case_name = ct.nii
+2025-12-16 00:10:25,669 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:25,716 - src.runner - INFO - SAM2 predictor init: 0.422s
+2025-12-16 00:10:25,717 - src.runner - INFO - [axial] Selected prompt indices: [5, 12, 19]
+2025-12-16 00:10:27,494 - src.runner - INFO - Mean Dice: 0.8879 | Mean IoU: 0.8329 | Mean 95th Percentile Hausdorff Distance: 1.8578
+2025-12-16 00:10:27,513 - src.runner - INFO - Case 30 completed successfully: bone = sternum, case_name = ct.nii
+2025-12-16 00:10:27,513 - src.runner - INFO - Progress: 13/50 cases completed, 37 remaining
+2025-12-16 00:10:27,513 - src.runner - INFO - Running inference for case 14: bone = humerus, case_name = ct.nii
+2025-12-16 00:10:27,837 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:27,884 - src.runner - INFO - SAM2 predictor init: 0.370s
+2025-12-16 00:10:27,885 - src.runner - INFO - [axial] Selected prompt indices: [5, 27, 49]
+2025-12-16 00:10:31,482 - src.runner - INFO - Mean Dice: 0.9584 | Mean IoU: 0.9379 | Mean 95th Percentile Hausdorff Distance: 0.8575
+2025-12-16 00:10:31,511 - src.runner - INFO - Case 14 completed successfully: bone = humerus, case_name = ct.nii
+2025-12-16 00:10:31,511 - src.runner - INFO - Progress: 14/50 cases completed, 36 remaining
+2025-12-16 00:10:31,511 - src.runner - INFO - Running inference for case 13: bone = humerus, case_name = ct.nii
+2025-12-16 00:10:31,934 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:31,979 - src.runner - INFO - SAM2 predictor init: 0.468s
+2025-12-16 00:10:31,981 - src.runner - INFO - [axial] Selected prompt indices: [5, 59, 113]
+2025-12-16 00:10:39,543 - src.runner - INFO - Mean Dice: 0.9545 | Mean IoU: 0.9191 | Mean 95th Percentile Hausdorff Distance: 1.1298
+2025-12-16 00:10:39,575 - src.runner - INFO - Case 13 completed successfully: bone = humerus, case_name = ct.nii
+2025-12-16 00:10:39,575 - src.runner - INFO - Progress: 15/50 cases completed, 35 remaining
+2025-12-16 00:10:39,575 - src.runner - INFO - Running inference for case 21: bone = sacrum, case_name = ct.nii
+2025-12-16 00:10:39,915 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:39,961 - src.runner - INFO - SAM2 predictor init: 0.386s
+2025-12-16 00:10:39,962 - src.runner - INFO - [axial] Selected prompt indices: [5, 46, 86]
+2025-12-16 00:10:45,928 - src.runner - INFO - Mean Dice: 0.7795 | Mean IoU: 0.6701 | Mean 95th Percentile Hausdorff Distance: 7.7336
+2025-12-16 00:10:45,966 - src.runner - INFO - Case 21 completed successfully: bone = sacrum, case_name = ct.nii
+2025-12-16 00:10:45,966 - src.runner - INFO - Progress: 16/50 cases completed, 34 remaining
+2025-12-16 00:10:45,966 - src.runner - INFO - Running inference for case 27: bone = hip, case_name = ct.nii
+2025-12-16 00:10:46,562 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:46,606 - src.runner - INFO - SAM2 predictor init: 0.638s
+2025-12-16 00:10:46,607 - src.runner - INFO - [axial] Selected prompt indices: [5, 71, 136]
+2025-12-16 00:10:55,450 - src.runner - INFO - Mean Dice: 0.9493 | Mean IoU: 0.9102 | Mean 95th Percentile Hausdorff Distance: 1.7614
+2025-12-16 00:10:55,564 - src.runner - INFO - Case 27 completed successfully: bone = hip, case_name = ct.nii
+2025-12-16 00:10:55,565 - src.runner - INFO - Progress: 17/50 cases completed, 33 remaining
+2025-12-16 00:10:55,565 - src.runner - INFO - Running inference for case 17: bone = clavicula, case_name = ct.nii
+2025-12-16 00:10:55,883 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:55,927 - src.runner - INFO - SAM2 predictor init: 0.362s
+2025-12-16 00:10:55,928 - src.runner - INFO - [axial] Selected prompt indices: [5, 14, 22]
+2025-12-16 00:10:58,224 - src.runner - INFO - Mean Dice: 0.9129 | Mean IoU: 0.8714 | Mean 95th Percentile Hausdorff Distance: 2.6088
+2025-12-16 00:10:58,244 - src.runner - INFO - Case 17 completed successfully: bone = clavicula, case_name = ct.nii
+2025-12-16 00:10:58,244 - src.runner - INFO - Progress: 18/50 cases completed, 32 remaining
+2025-12-16 00:10:58,244 - src.runner - INFO - Running inference for case 34: bone = sternum, case_name = ct.nii
+2025-12-16 00:10:58,605 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:10:58,648 - src.runner - INFO - SAM2 predictor init: 0.404s
+2025-12-16 00:10:58,650 - src.runner - INFO - [axial] Selected prompt indices: [5, 62, 118]
+2025-12-16 00:11:06,766 - src.runner - INFO - Mean Dice: 0.7967 | Mean IoU: 0.6917 | Mean 95th Percentile Hausdorff Distance: 5.4752
+2025-12-16 00:11:06,791 - src.runner - INFO - Case 34 completed successfully: bone = sternum, case_name = ct.nii
+2025-12-16 00:11:06,792 - src.runner - INFO - Progress: 19/50 cases completed, 31 remaining
+2025-12-16 00:11:06,792 - src.runner - INFO - Running inference for case 12: bone = humerus, case_name = ct.nii
+2025-12-16 00:11:07,166 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:11:07,210 - src.runner - INFO - SAM2 predictor init: 0.418s
+2025-12-16 00:11:07,211 - src.runner - INFO - [axial] Selected prompt indices: [5, 15, 24]
+2025-12-16 00:11:09,208 - src.runner - INFO - Mean Dice: 0.8308 | Mean IoU: 0.8058 | Mean 95th Percentile Hausdorff Distance: 16.5662
+2025-12-16 00:11:09,222 - src.runner - INFO - Case 12 completed successfully: bone = humerus, case_name = ct.nii
+2025-12-16 00:11:09,222 - src.runner - INFO - Progress: 20/50 cases completed, 30 remaining
+2025-12-16 00:11:09,222 - src.runner - INFO - Running inference for case 28: bone = hip, case_name = ct.nii
+2025-12-16 00:11:09,637 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:11:09,756 - src.runner - INFO - SAM2 predictor init: 0.534s
+2025-12-16 00:11:09,758 - src.runner - INFO - [axial] Selected prompt indices: [5, 73, 140]
+2025-12-16 00:11:19,093 - src.runner - INFO - Mean Dice: 0.9503 | Mean IoU: 0.9119 | Mean 95th Percentile Hausdorff Distance: 1.7771
+2025-12-16 00:11:19,106 - src.runner - INFO - Case 28 completed successfully: bone = hip, case_name = ct.nii
+2025-12-16 00:11:19,106 - src.runner - INFO - Progress: 21/50 cases completed, 29 remaining
+2025-12-16 00:11:19,106 - src.runner - INFO - Running inference for case 11: bone = humerus, case_name = ct.nii
+2025-12-16 00:11:19,415 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:11:19,459 - src.runner - INFO - SAM2 predictor init: 0.352s
+2025-12-16 00:11:19,459 - src.runner - INFO - [axial] Selected prompt indices: [5, 10, 14]
+2025-12-16 00:11:21,067 - src.runner - INFO - Mean Dice: 0.8359 | Mean IoU: 0.8226 | Mean 95th Percentile Hausdorff Distance: 0.8235
+2025-12-16 00:11:21,092 - src.runner - INFO - Case 11 completed successfully: bone = humerus, case_name = ct.nii
+2025-12-16 00:11:21,092 - src.runner - INFO - Progress: 22/50 cases completed, 28 remaining
+2025-12-16 00:11:21,092 - src.runner - INFO - Running inference for case 32: bone = sternum, case_name = ct.nii
+2025-12-16 00:11:21,408 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:11:21,452 - src.runner - INFO - SAM2 predictor init: 0.360s
+2025-12-16 00:11:21,453 - src.runner - INFO - [axial] Selected prompt indices: [5, 13, 18]
+2025-12-16 00:11:23,048 - src.runner - INFO - Mean Dice: 0.4503 | Mean IoU: 0.3747 | Mean 95th Percentile Hausdorff Distance: 3.9172
+2025-12-16 00:11:23,064 - src.runner - INFO - Case 32 completed successfully: bone = sternum, case_name = ct.nii
+2025-12-16 00:11:23,064 - src.runner - INFO - Progress: 23/50 cases completed, 27 remaining
+2025-12-16 00:11:23,064 - src.runner - INFO - Running inference for case 18: bone = clavicula, case_name = ct.nii
+2025-12-16 00:11:23,397 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:11:23,615 - src.runner - INFO - SAM2 predictor init: 0.550s
+2025-12-16 00:11:23,615 - src.runner - INFO - [axial] Selected prompt indices: [5, 14, 23]
+2025-12-16 00:11:25,627 - src.runner - INFO - Mean Dice: 0.9355 | Mean IoU: 0.9016 | Mean 95th Percentile Hausdorff Distance: 1.3230
+2025-12-16 00:11:25,644 - src.runner - INFO - Case 18 completed successfully: bone = clavicula, case_name = ct.nii
+2025-12-16 00:11:25,644 - src.runner - INFO - Progress: 24/50 cases completed, 26 remaining
+2025-12-16 00:11:25,644 - src.runner - INFO - Running inference for case 19: bone = clavicula, case_name = ct.nii
+2025-12-16 00:11:25,973 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:11:26,016 - src.runner - INFO - SAM2 predictor init: 0.372s
+2025-12-16 00:11:26,017 - src.runner - INFO - [axial] Selected prompt indices: [5, 24, 42]
+2025-12-16 00:11:29,329 - src.runner - INFO - Mean Dice: 0.8653 | Mean IoU: 0.8215 | Mean 95th Percentile Hausdorff Distance: 2.6226
+2025-12-16 00:11:29,346 - src.runner - INFO - Case 19 completed successfully: bone = clavicula, case_name = ct.nii
+2025-12-16 00:11:29,347 - src.runner - INFO - Progress: 25/50 cases completed, 25 remaining
+2025-12-16 00:11:29,347 - src.runner - INFO - 
+--- Progress Update (25/50) ---
+Elapsed: 1m 35s | Est. Remaining: 1m 35s
+Avg Dice: 0.8225 | Avg IoU: 0.7641 | Valid Cases: 25
+----------------------------------------
+2025-12-16 00:11:29,347 - src.runner - INFO - Running inference for case 35: bone = scapula, case_name = ct.nii
+2025-12-16 00:11:29,869 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:11:29,913 - src.runner - INFO - SAM2 predictor init: 0.565s
+2025-12-16 00:11:29,913 - src.runner - INFO - [axial] Selected prompt indices: [5, 29, 52]
+2025-12-16 00:11:33,635 - src.runner - INFO - Mean Dice: 0.8735 | Mean IoU: 0.7922 | Mean 95th Percentile Hausdorff Distance: 1.8354
+2025-12-16 00:11:33,687 - src.runner - INFO - Case 35 completed successfully: bone = scapula, case_name = ct.nii
+2025-12-16 00:11:33,687 - src.runner - INFO - Progress: 26/50 cases completed, 24 remaining
+2025-12-16 00:11:33,687 - src.runner - INFO - Running inference for case 20: bone = sacrum, case_name = ct.nii
+2025-12-16 00:11:34,011 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:11:34,067 - src.runner - INFO - SAM2 predictor init: 0.379s
+2025-12-16 00:11:34,068 - src.runner - INFO - [axial] Selected prompt indices: [5, 49, 93]
+2025-12-16 00:11:40,744 - src.runner - INFO - Mean Dice: 0.8449 | Mean IoU: 0.7522 | Mean 95th Percentile Hausdorff Distance: 4.8109
+2025-12-16 00:11:40,778 - src.runner - INFO - Case 20 completed successfully: bone = sacrum, case_name = ct.nii
+2025-12-16 00:11:40,778 - src.runner - INFO - Progress: 27/50 cases completed, 23 remaining
+2025-12-16 00:11:40,778 - src.runner - INFO - Running inference for case 25: bone = hip, case_name = ct.nii
+2025-12-16 00:11:41,090 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:11:41,133 - src.runner - INFO - SAM2 predictor init: 0.354s
+2025-12-16 00:11:41,135 - src.runner - INFO - [axial] Selected prompt indices: [5, 71, 136]
+2025-12-16 00:11:50,780 - src.runner - INFO - Mean Dice: 0.9533 | Mean IoU: 0.9123 | Mean 95th Percentile Hausdorff Distance: 1.5819
+2025-12-16 00:11:50,796 - src.runner - INFO - Case 25 completed successfully: bone = hip, case_name = ct.nii
+2025-12-16 00:11:50,796 - src.runner - INFO - Progress: 28/50 cases completed, 22 remaining
+2025-12-16 00:11:50,796 - src.runner - INFO - Running inference for case 10: bone = humerus, case_name = ct.nii
+2025-12-16 00:11:51,226 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:11:51,272 - src.runner - INFO - SAM2 predictor init: 0.475s
+2025-12-16 00:11:51,273 - src.runner - INFO - [axial] Selected prompt indices: [1, 3, 5]
+2025-12-16 00:11:52,287 - src.runner - INFO - Mean Dice: 0.8930 | Mean IoU: 0.8535 | Mean 95th Percentile Hausdorff Distance: 1.0347
+2025-12-16 00:11:52,298 - src.runner - INFO - Case 10 completed successfully: bone = humerus, case_name = ct.nii
+2025-12-16 00:11:52,298 - src.runner - INFO - Progress: 29/50 cases completed, 21 remaining
+2025-12-16 00:11:52,298 - src.runner - INFO - Running inference for case 36: bone = scapula, case_name = ct.nii
+2025-12-16 00:11:52,623 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:11:52,666 - src.runner - INFO - SAM2 predictor init: 0.368s
+2025-12-16 00:11:52,666 - src.runner - INFO - [axial] Selected prompt indices: [5, 22, 39]
+2025-12-16 00:11:55,440 - src.runner - INFO - Mean Dice: 0.8580 | Mean IoU: 0.7988 | Mean 95th Percentile Hausdorff Distance: 2.0790
+2025-12-16 00:11:55,450 - src.runner - INFO - Case 36 completed successfully: bone = scapula, case_name = ct.nii
+2025-12-16 00:11:55,450 - src.runner - INFO - Progress: 30/50 cases completed, 20 remaining
+2025-12-16 00:11:55,450 - src.runner - INFO - Running inference for case 33: bone = sternum, case_name = ct.nii
+2025-12-16 00:11:55,811 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:11:55,900 - src.runner - INFO - SAM2 predictor init: 0.449s
+2025-12-16 00:11:55,902 - src.runner - INFO - [axial] Selected prompt indices: [5, 64, 122]
+2025-12-16 00:12:03,926 - src.runner - INFO - Mean Dice: 0.8749 | Mean IoU: 0.8066 | Mean 95th Percentile Hausdorff Distance: 2.6232
+2025-12-16 00:12:03,942 - src.runner - INFO - Case 33 completed successfully: bone = sternum, case_name = ct.nii
+2025-12-16 00:12:03,942 - src.runner - INFO - Progress: 31/50 cases completed, 19 remaining
+2025-12-16 00:12:03,942 - src.runner - INFO - Running inference for case 31: bone = sternum, case_name = ct.nii
+2025-12-16 00:12:04,255 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:12:04,298 - src.runner - INFO - SAM2 predictor init: 0.355s
+2025-12-16 00:12:04,299 - src.runner - INFO - [axial] Selected prompt indices: [5, 53, 100]
+2025-12-16 00:12:11,254 - src.runner - INFO - Mean Dice: 0.8858 | Mean IoU: 0.8213 | Mean 95th Percentile Hausdorff Distance: 1.5551
+2025-12-16 00:12:11,268 - src.runner - INFO - Case 31 completed successfully: bone = sternum, case_name = ct.nii
+2025-12-16 00:12:11,268 - src.runner - INFO - Progress: 32/50 cases completed, 18 remaining
+2025-12-16 00:12:11,268 - src.runner - INFO - Running inference for case 26: bone = hip, case_name = ct.nii
+2025-12-16 00:12:11,583 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:12:11,825 - src.runner - INFO - SAM2 predictor init: 0.557s
+2025-12-16 00:12:11,827 - src.runner - INFO - [axial] Selected prompt indices: [5, 72, 138]
+2025-12-16 00:12:21,138 - src.runner - INFO - Mean Dice: 0.9518 | Mean IoU: 0.9147 | Mean 95th Percentile Hausdorff Distance: 1.4939
+2025-12-16 00:12:21,153 - src.runner - INFO - Case 26 completed successfully: bone = hip, case_name = ct.nii
+2025-12-16 00:12:21,153 - src.runner - INFO - Progress: 33/50 cases completed, 17 remaining
+2025-12-16 00:12:21,153 - src.runner - INFO - Running inference for case 23: bone = sacrum, case_name = ct.nii
+2025-12-16 00:12:21,735 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:12:22,044 - src.runner - INFO - SAM2 predictor init: 0.891s
+2025-12-16 00:12:22,045 - src.runner - INFO - [axial] Selected prompt indices: [5, 46, 86]
+2025-12-16 00:12:28,202 - src.runner - INFO - Mean Dice: 0.7415 | Mean IoU: 0.6349 | Mean 95th Percentile Hausdorff Distance: 9.5778
+2025-12-16 00:12:28,290 - src.runner - INFO - Case 23 completed successfully: bone = sacrum, case_name = ct.nii
+2025-12-16 00:12:28,290 - src.runner - INFO - Progress: 34/50 cases completed, 16 remaining
+2025-12-16 00:12:28,290 - src.runner - INFO - Running inference for case 24: bone = sacrum, case_name = ct.nii
+2025-12-16 00:12:28,611 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:12:28,655 - src.runner - INFO - SAM2 predictor init: 0.364s
+2025-12-16 00:12:28,657 - src.runner - INFO - [axial] Selected prompt indices: [5, 51, 97]
+2025-12-16 00:12:35,595 - src.runner - INFO - Mean Dice: 0.8206 | Mean IoU: 0.7158 | Mean 95th Percentile Hausdorff Distance: 6.2170
+2025-12-16 00:12:35,647 - src.runner - INFO - Case 24 completed successfully: bone = sacrum, case_name = ct.nii
+2025-12-16 00:12:35,647 - src.runner - INFO - Progress: 35/50 cases completed, 15 remaining
+2025-12-16 00:12:35,649 - src.runner - INFO - Running inference for case 45: bone = skull, case_name = ct.nii
+2025-12-16 00:12:35,963 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:12:36,007 - src.runner - INFO - SAM2 predictor init: 0.357s
+2025-12-16 00:12:36,007 - src.runner - INFO - [axial] Selected prompt indices: [5, 55, 105]
+2025-12-16 00:12:43,075 - src.runner - INFO - Mean Dice: 0.7842 | Mean IoU: 0.7073 | Mean 95th Percentile Hausdorff Distance: 15.4488
+2025-12-16 00:12:43,118 - src.runner - INFO - Case 45 completed successfully: bone = skull, case_name = ct.nii
+2025-12-16 00:12:43,118 - src.runner - INFO - Progress: 36/50 cases completed, 14 remaining
+2025-12-16 00:12:43,118 - src.runner - INFO - Running inference for case 46: bone = skull, case_name = ct.nii
+2025-12-16 00:12:43,428 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:12:43,471 - src.runner - INFO - SAM2 predictor init: 0.353s
+2025-12-16 00:12:43,472 - src.runner - INFO - [axial] Selected prompt indices: [5, 35, 64]
+2025-12-16 00:12:47,897 - src.runner - INFO - Mean Dice: 0.7353 | Mean IoU: 0.6439 | Mean 95th Percentile Hausdorff Distance: 11.8473
+2025-12-16 00:12:47,927 - src.runner - INFO - Case 46 completed successfully: bone = skull, case_name = ct.nii
+2025-12-16 00:12:47,927 - src.runner - INFO - Progress: 37/50 cases completed, 13 remaining
+2025-12-16 00:12:47,927 - src.runner - INFO - Running inference for case 37: bone = scapula, case_name = ct.nii
+2025-12-16 00:12:48,247 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:12:48,290 - src.runner - INFO - SAM2 predictor init: 0.362s
+2025-12-16 00:12:48,291 - src.runner - INFO - [axial] Selected prompt indices: [5, 55, 105]
+2025-12-16 00:12:55,510 - src.runner - INFO - Mean Dice: 0.9247 | Mean IoU: 0.8616 | Mean 95th Percentile Hausdorff Distance: 1.0617
+2025-12-16 00:12:55,529 - src.runner - INFO - Case 37 completed successfully: bone = scapula, case_name = ct.nii
+2025-12-16 00:12:55,530 - src.runner - INFO - Progress: 38/50 cases completed, 12 remaining
+2025-12-16 00:12:55,530 - src.runner - INFO - Running inference for case 42: bone = femur, case_name = ct.nii
+2025-12-16 00:12:55,861 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:12:56,030 - src.runner - INFO - SAM2 predictor init: 0.500s
+2025-12-16 00:12:56,030 - src.runner - INFO - [axial] Selected prompt indices: [5, 37, 69]
+2025-12-16 00:13:01,108 - src.runner - INFO - Mean Dice: 0.9591 | Mean IoU: 0.9337 | Mean 95th Percentile Hausdorff Distance: 3.3745
+2025-12-16 00:13:01,123 - src.runner - INFO - Case 42 completed successfully: bone = femur, case_name = ct.nii
+2025-12-16 00:13:01,123 - src.runner - INFO - Progress: 39/50 cases completed, 11 remaining
+2025-12-16 00:13:01,123 - src.runner - INFO - Running inference for case 39: bone = scapula, case_name = ct.nii
+2025-12-16 00:13:01,437 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:13:01,481 - src.runner - INFO - SAM2 predictor init: 0.357s
+2025-12-16 00:13:01,483 - src.runner - INFO - [axial] Selected prompt indices: [5, 54, 103]
+2025-12-16 00:13:08,674 - src.runner - INFO - Mean Dice: 0.8988 | Mean IoU: 0.8292 | Mean 95th Percentile Hausdorff Distance: 5.3122
+2025-12-16 00:13:08,689 - src.runner - INFO - Case 39 completed successfully: bone = scapula, case_name = ct.nii
+2025-12-16 00:13:08,689 - src.runner - INFO - Progress: 40/50 cases completed, 10 remaining
+2025-12-16 00:13:08,689 - src.runner - INFO - Running inference for case 38: bone = scapula, case_name = ct.nii
+2025-12-16 00:13:09,059 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:13:09,107 - src.runner - INFO - SAM2 predictor init: 0.418s
+2025-12-16 00:13:09,108 - src.runner - INFO - [axial] Selected prompt indices: [5, 50, 94]
+2025-12-16 00:13:16,024 - src.runner - INFO - Mean Dice: 0.9386 | Mean IoU: 0.8852 | Mean 95th Percentile Hausdorff Distance: 1.0772
+2025-12-16 00:13:16,037 - src.runner - INFO - Case 38 completed successfully: bone = scapula, case_name = ct.nii
+2025-12-16 00:13:16,037 - src.runner - INFO - Progress: 41/50 cases completed, 9 remaining
+2025-12-16 00:13:16,037 - src.runner - INFO - Running inference for case 43: bone = femur, case_name = ct.nii
+2025-12-16 00:13:16,363 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:13:16,575 - src.runner - INFO - SAM2 predictor init: 0.538s
+2025-12-16 00:13:16,576 - src.runner - INFO - [axial] Selected prompt indices: [5, 34, 62]
+2025-12-16 00:13:21,059 - src.runner - INFO - Mean Dice: 0.9728 | Mean IoU: 0.9515 | Mean 95th Percentile Hausdorff Distance: 1.3645
+2025-12-16 00:13:21,072 - src.runner - INFO - Case 43 completed successfully: bone = femur, case_name = ct.nii
+2025-12-16 00:13:21,072 - src.runner - INFO - Progress: 42/50 cases completed, 8 remaining
+2025-12-16 00:13:21,072 - src.runner - INFO - Running inference for case 40: bone = femur, case_name = ct.nii
+2025-12-16 00:13:21,712 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:13:21,759 - src.runner - INFO - SAM2 predictor init: 0.686s
+2025-12-16 00:13:21,759 - src.runner - INFO - [axial] Selected prompt indices: [5, 28, 51]
+2025-12-16 00:13:25,615 - src.runner - INFO - Mean Dice: 0.9496 | Mean IoU: 0.9178 | Mean 95th Percentile Hausdorff Distance: 1.7403
+2025-12-16 00:13:25,701 - src.runner - INFO - Case 40 completed successfully: bone = femur, case_name = ct.nii
+2025-12-16 00:13:25,701 - src.runner - INFO - Progress: 43/50 cases completed, 7 remaining
+2025-12-16 00:13:25,701 - src.runner - INFO - Running inference for case 47: bone = skull, case_name = ct.nii
+2025-12-16 00:13:26,012 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:13:26,056 - src.runner - INFO - SAM2 predictor init: 0.354s
+2025-12-16 00:13:26,056 - src.runner - INFO - [axial] Selected prompt indices: [4, 5]
+2025-12-16 00:13:26,903 - src.runner - INFO - Mean Dice: 0.8318 | Mean IoU: 0.7824 | Mean 95th Percentile Hausdorff Distance: 1.7003
+2025-12-16 00:13:26,917 - src.runner - INFO - Case 47 completed successfully: bone = skull, case_name = ct.nii
+2025-12-16 00:13:26,918 - src.runner - INFO - Progress: 44/50 cases completed, 6 remaining
+2025-12-16 00:13:26,918 - src.runner - INFO - Running inference for case 41: bone = femur, case_name = ct.nii
+2025-12-16 00:13:27,233 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:13:27,278 - src.runner - INFO - SAM2 predictor init: 0.360s
+2025-12-16 00:13:27,279 - src.runner - INFO - [axial] Selected prompt indices: [5, 29, 53]
+2025-12-16 00:13:31,422 - src.runner - INFO - Mean Dice: 0.9614 | Mean IoU: 0.9330 | Mean 95th Percentile Hausdorff Distance: 1.7789
+2025-12-16 00:13:31,452 - src.runner - INFO - Case 41 completed successfully: bone = femur, case_name = ct.nii
+2025-12-16 00:13:31,452 - src.runner - INFO - Progress: 45/50 cases completed, 5 remaining
+2025-12-16 00:13:31,452 - src.runner - INFO - Running inference for case 29: bone = hip, case_name = ct.nii
+2025-12-16 00:13:31,795 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:13:31,839 - src.runner - INFO - SAM2 predictor init: 0.386s
+2025-12-16 00:13:31,841 - src.runner - INFO - [axial] Selected prompt indices: [5, 72, 138]
+2025-12-16 00:13:41,554 - src.runner - INFO - Mean Dice: 0.9381 | Mean IoU: 0.8885 | Mean 95th Percentile Hausdorff Distance: 2.6677
+2025-12-16 00:13:41,583 - src.runner - INFO - Case 29 completed successfully: bone = hip, case_name = ct.nii
+2025-12-16 00:13:41,583 - src.runner - INFO - Progress: 46/50 cases completed, 4 remaining
+2025-12-16 00:13:41,583 - src.runner - INFO - Running inference for case 22: bone = sacrum, case_name = ct.nii
+2025-12-16 00:13:41,970 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:13:42,013 - src.runner - INFO - SAM2 predictor init: 0.430s
+2025-12-16 00:13:42,015 - src.runner - INFO - [axial] Selected prompt indices: [5, 51, 97]
+2025-12-16 00:13:49,114 - src.runner - INFO - Mean Dice: 0.7101 | Mean IoU: 0.6036 | Mean 95th Percentile Hausdorff Distance: 12.2234
+2025-12-16 00:13:49,128 - src.runner - INFO - Case 22 completed successfully: bone = sacrum, case_name = ct.nii
+2025-12-16 00:13:49,128 - src.runner - INFO - Progress: 47/50 cases completed, 3 remaining
+2025-12-16 00:13:49,128 - src.runner - ERROR - Case 49 failed: bone = skull, case_name = ct.nii, error: Not enough relevant slices (1). Need more than 3 slices to run the case.
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/sam2group/miniforge3/lib/python3.12/concurrent/futures/process.py", line 264, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam2group/Sam2/ML-P2-Sam2/src/utils/dataloader.py", line 170, in _prepare_case_data
+    raise ValueError(
+ValueError: Not enough relevant slices (1). Need more than 3 slices to run the case.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sam2group/Sam2/ML-P2-Sam2/src/runner.py", line 707, in _process_future
+    prepared = done_future.result()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam2group/miniforge3/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sam2group/miniforge3/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Not enough relevant slices (1). Need more than 3 slices to run the case.
+2025-12-16 00:13:49,129 - src.runner - INFO - Progress: 48/50 cases completed, 2 remaining
+2025-12-16 00:13:49,129 - src.runner - INFO - Running inference for case 44: bone = femur, case_name = ct.nii
+2025-12-16 00:13:49,457 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:13:49,500 - src.runner - INFO - SAM2 predictor init: 0.371s
+2025-12-16 00:13:49,502 - src.runner - INFO - [axial] Selected prompt indices: [5, 41, 77]
+2025-12-16 00:13:55,318 - src.runner - INFO - Mean Dice: 0.9607 | Mean IoU: 0.9361 | Mean 95th Percentile Hausdorff Distance: 2.7306
+2025-12-16 00:13:55,333 - src.runner - INFO - Case 44 completed successfully: bone = femur, case_name = ct.nii
+2025-12-16 00:13:55,333 - src.runner - INFO - Progress: 49/50 cases completed, 1 remaining
+2025-12-16 00:13:55,333 - src.runner - INFO - Running inference for case 48: bone = skull, case_name = ct.nii
+2025-12-16 00:13:55,647 - root - INFO - Loaded checkpoint sucessfully
+2025-12-16 00:13:55,691 - src.runner - INFO - SAM2 predictor init: 0.357s
+2025-12-16 00:13:55,693 - src.runner - INFO - [axial] Selected prompt indices: [5, 66, 127]
+2025-12-16 00:14:05,369 - src.runner - INFO - Mean Dice: 0.7913 | Mean IoU: 0.7138 | Mean 95th Percentile Hausdorff Distance: 13.4076
+2025-12-16 00:14:05,384 - src.runner - INFO - Case 48 completed successfully: bone = skull, case_name = ct.nii
+2025-12-16 00:14:05,384 - src.runner - INFO - Progress: 50/50 cases completed, 0 remaining
+2025-12-16 00:14:05,384 - src.runner - INFO - 
+--- Progress Update (50/50) ---
+Elapsed: 4m 11s | Est. Remaining: 0.0s
+Avg Dice: 0.8493 | Avg IoU: 0.7896 | Valid Cases: 49
+----------------------------------------
+2025-12-16 00:14:05,436 - src.runner - INFO - 
+==================================================
+Dataset Evaluation Complete
+==================================================
+Total cases: 50 | Successful cases: 49 | Failed cases: 1
+2025-12-16 00:14:05,436 - src.runner - INFO - Aggregate Results:
+Dice - Mean: 0.8493, Std: 0.1108
+IoU - Mean: 0.7896, Std: 0.1260
+Hausdorff - Mean: 4.3640, Std: 4.2450
+2025-12-16 00:14:05,437 - src.runner - INFO - Per-bone results (successful cases only):
+vertebrae: success 5/5 | Dice mean 0.7714 (std 0.0168), IoU mean 0.6866 (std 0.0289)
+clavicula: success 5/5 | Dice mean 0.8909 (std 0.0405), IoU mean 0.8532 (std 0.0403)
+rib: success 5/5 | Dice mean 0.7716 (std 0.1707), IoU mean 0.7054 (std 0.1568)
+sternum: success 5/5 | Dice mean 0.7791 (std 0.1678), IoU mean 0.7054 (std 0.1729)
+humerus: success 5/5 | Dice mean 0.8945 (std 0.0551), IoU mean 0.8678 (std 0.0522)
+sacrum: success 5/5 | Dice mean 0.7793 (std 0.0495), IoU mean 0.6753 (std 0.0536)
+hip: success 5/5 | Dice mean 0.9486 (std 0.0054), IoU mean 0.9075 (std 0.0096)
+scapula: success 5/5 | Dice mean 0.8987 (std 0.0302), IoU mean 0.8334 (std 0.0358)
+skull: success 4/4 | Dice mean 0.7856 (std 0.0343), IoU mean 0.7119 (std 0.0491)
+femur: success 5/5 | Dice mean 0.9607 (std 0.0074), IoU mean 0.9344 (std 0.0107)
+unknown_bone: success 0/1 | no successful cases for metrics
+2025-12-16 00:14:05,440 - src.runner - INFO - Results saved to: /home/sam2group/Sam2/ML-P2-Sam2/outputs/evaluations/conditional_frame_selection/temp_0.4.json
+2025-12-16 00:14:05,440 - __main__ - INFO - Skipping visualization; save_examples disabled
+2025-12-16 00:14:05,440 - __main__ - INFO - ==================================================
+FINAL RESULTS SUMMARY
+==================================================
+Dataset: configs/dataset/dataset_50_ex_0.yaml
+Total Cases: 50
+Successful: 49
+Failed: 1
+2025-12-16 00:14:05,440 - __main__ - INFO - Performance Metrics:
+  Dice Score: 0.8493 ± 0.1108
+  IoU Score:  0.7896 ± 0.1260
+  Hausdorff:  4.3640 ± 4.2450
+2025-12-16 00:14:05,440 - __main__ - INFO - Per-bone metrics (successful cases only):
+vertebrae: success 5/5 | Dice 0.7714 ± 0.0168, IoU 0.6866 ± 0.0289
+clavicula: success 5/5 | Dice 0.8909 ± 0.0405, IoU 0.8532 ± 0.0403
+rib: success 5/5 | Dice 0.7716 ± 0.1707, IoU 0.7054 ± 0.1568
+sternum: success 5/5 | Dice 0.7791 ± 0.1678, IoU 0.7054 ± 0.1729
+humerus: success 5/5 | Dice 0.8945 ± 0.0551, IoU 0.8678 ± 0.0522
+sacrum: success 5/5 | Dice 0.7793 ± 0.0495, IoU 0.6753 ± 0.0536
+hip: success 5/5 | Dice 0.9486 ± 0.0054, IoU 0.9075 ± 0.0096
+scapula: success 5/5 | Dice 0.8987 ± 0.0302, IoU 0.8334 ± 0.0358
+skull: success 4/4 | Dice 0.7856 ± 0.0343, IoU 0.7119 ± 0.0491
+femur: success 5/5 | Dice 0.9607 ± 0.0074, IoU 0.9344 ± 0.0107
+unknown_bone: success 0/1 | no successful cases
